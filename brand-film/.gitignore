@@ -1,0 +1,6 @@
+# Re-include docs (the repo root ignores every docs/ folder)
+!docs/
+node_modules/
+output/.segments/
+output/stills/
+output/*.zip

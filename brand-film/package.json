@@ -1,0 +1,16 @@
+{
+  "name": "brand-film",
+  "private": true,
+  "type": "module",
+  "description": "Brand introduction film: deterministic HTML/SVG animation rendered to video with Playwright + ffmpeg.",
+  "scripts": {
+    "audio": "python3 audio/score.py",
+    "preview": "node scripts/serve.mjs 8080",
+    "stills": "node scripts/render.mjs --stills",
+    "render": "node scripts/render.mjs",
+    "build": "python3 audio/score.py && node scripts/render.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

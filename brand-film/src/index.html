@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Film</title>
+<link rel="stylesheet" href="film.css">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage">
+    <div id="bg"><div class="light"></div></div>
+    <div id="dark"></div>
+    <div id="scenes"></div>
+    <div id="overlay"></div>
+    <canvas id="grain" width="960" height="540"></canvas>
+    <div id="vignette"></div>
+  </div>
+</div>
+
+<!-- Preview controls (hidden in render mode) -->
+<div id="controls">
+  <button id="play">Play</button>
+  <input id="scrub" type="range" min="0" max="43.75" step="0.0166667" value="0">
+  <span id="time">0.00</span>
+  <label><input id="mute" type="checkbox"> mute</label>
+</div>
+<audio id="audio" src="../output/audio/score.wav" preload="none"></audio>
+
+<!-- Directional motion blur used during camera pans -->
+<svg width="0" height="0" style="position:absolute">
+  <filter id="mblur" x="-5%" y="-5%" width="110%" height="110%">
+    <feGaussianBlur id="mblurStd" stdDeviation="0 0"/>
+  </filter>
+</svg>
+
+<script src="lib.js"></script>
+<script src="film.js"></script>
+</body>
+</html>
