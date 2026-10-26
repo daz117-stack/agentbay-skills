@@ -1,0 +1,11 @@
+/* Firststone palette: cobalt on stone */
+:root {
+  --fs-cobalt: #2F54EB;     /* accent: mark, highlights, offers, tagline (≤5% of a layout) */
+  --fs-on-cobalt: #FAF9F6;  /* text on cobalt (≈6:1). Never ink on cobalt (≈3:1) */
+  --fs-ink: #121417;        /* text, mark, dark plates */
+  --fs-stone: #EEECE7;      /* default background */
+  --fs-stone-high: #FAF9F6; /* cards, UI surfaces */
+  --fs-graphite: #575B63;   /* secondary text, labels */
+  --fs-rule: #D6D3CC;       /* grids, dividers */
+  --fs-screen: #151820;     /* dark digital menus / display UIs */
+}

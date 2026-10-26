@@ -1,0 +1,70 @@
+{
+  "_readme": "Every brand-dependent element of the film lives here. Edit, then re-render (see README.md). Empty strings hide the element; the layout adapts.",
+  "identity": {
+    "name": "Firststone",
+    "_name_note": "Approved company name. Empty = symbol-only lockup (the default, because the name is not decided). When set, the end frame becomes mark + wordmark.",
+    "descriptor": "Media · Software · Business Systems",
+    "tagline": "Start here. Start right.",
+    "_tagline_note": "Optional approved tagline, shown under the descriptor on the end frame. Empty = hidden.",
+    "pillarsLine": "Trusted · Stable · Well-designed",
+    "contact": {
+      "web": "",
+      "email": "",
+      "phone": "",
+      "social": ""
+    },
+    "_contact_note": "Any non-empty values are joined into one mono line on the end frame.",
+    "logoSrc": "",
+    "_logoSrc_note": "Optional path (relative to src/) to an approved SVG/PNG logo. If set, the drawn temporary mark resolves into this file during the reveal and on the end frame."
+  },
+  "palette": {
+    "paper": "#EEECE7",
+    "paperHi": "#FAF9F6",
+    "ink": "#121417",
+    "graphite": "#575B63",
+    "rule": "#D6D3CC",
+    "accent": "#2F54EB",
+    "onAccent": "#FAF9F6",
+    "screen": "#151820",
+    "_note": "Cobalt on stone. onAccent = text colour on accent blocks (paper on cobalt ≈ 6:1 contrast; ink would be ≈ 3:1)."
+  },
+  "typography": {
+    "display": "FilmDisplay",
+    "_display_note": "Archivo variable (OFL), used with font-stretch for the expanded headline voice.",
+    "displayStretch": "112%",
+    "displayWeight": 800,
+    "sans": "FilmSans",
+    "mono": "FilmMono"
+  },
+  "copy": {
+    "open1": "Every business",
+    "open2": "runs on a process.",
+    "openQ": "Is yours *designed?*",
+    "idea": "We design the systems|your business runs on.",
+    "ideaCaption": "Paper slips · Missed messages · Old prices",
+    "cap1Eyebrow": "Media & Advertising",
+    "cap1": "Digital menus|that sell.",
+    "cap2Eyebrow": "Order Management",
+    "cap2": "Every order, in|the right place.",
+    "cap3Eyebrow": "Retail Operations",
+    "cap3": "Stock you can|actually see.",
+    "cap4Eyebrow": "Brand & Campaigns",
+    "cap4": "One look,|every screen.",
+    "connect": "Media. Software. Operations.",
+    "connectSub": "One team · One connected system"
+  },
+  "pillars": [
+    {
+      "word": "Trusted",
+      "line": "Clear prices · Clear status · No surprises"
+    },
+    {
+      "word": "Stable",
+      "line": "Built to run, every single day"
+    },
+    {
+      "word": "Well-designed",
+      "line": "Every detail, considered"
+    }
+  ]
+}

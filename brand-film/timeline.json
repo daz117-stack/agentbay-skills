@@ -1,0 +1,18 @@
+{
+  "_readme": "Scene start times in seconds. Visual code (src/film.js) and the score (audio/score.py) both read this file, so retiming a scene moves its animation and its sound cues together. Tempo: 96 BPM (1 bar = 2.5 s).",
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "bpm": 96,
+  "duration": 43.75,
+  "scenes": {
+    "open": 0.0,
+    "idea": 4.9,
+    "cap": 9.7,
+    "trusted": 22.5,
+    "stable": 26.25,
+    "designed": 30.0,
+    "reveal": 33.75,
+    "end": 38.75
+  }
+}
