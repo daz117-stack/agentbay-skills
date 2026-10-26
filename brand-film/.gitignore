@@ -3,5 +3,4 @@
 node_modules/
 output/.segments/
 output/stills/
-output/*.zip
 !.claude/
