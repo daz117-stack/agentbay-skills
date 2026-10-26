@@ -5,8 +5,3 @@ output/.segments/
 output/stills/
 output/*.zip
 !.claude/
-# Brand kit: commit the unique files (overview, logo, colors); copies and the zip are rebuilt
-output/Firststone-brand-kit.zip
-output/Firststone-brand-kit/film/
-output/Firststone-brand-kit/fonts/
-output/Firststone-brand-kit/foundations/
