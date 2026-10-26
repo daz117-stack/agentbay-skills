@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v1
+**Document version:** v2
 **Last updated:** 2026-10-26
 
 > Built with the `product-marketing` skill (marketingskills, auto-draft mode) from the brand foundations in this folder: `brand-context.md`, `positioning.md`, `messaging.md`, `voice.md`, `story.md`. Those files remain the source of truth for brand; this file translates them into the shape every marketing skill reads.
@@ -8,13 +8,15 @@
 
 ## Product Overview
 **One-liner:** Firststone sets up how a small café, restaurant or shop looks and how it runs (menus, ads, order and stock tools), then stays to keep it working.
-**What it does:** One small team designs the visuals a customer sees (digital and printed menus, product ads, social content) and sets up the simple systems behind them (orders moving from counter to kitchen, stock on the shelf, prices that match on every screen). After go-live it supports, updates and keeps the setup running on a monthly plan.
+**Launch product (built once, for 3amo Fouad):** **QR menu + WhatsApp ordering.** A print-ready menu (PDF) carrying a QR code, and a mobile menu page in Arabic with category tabs, search, item sizes, a cart that survives a page reload, pickup or delivery, and a **Send on WhatsApp** button that opens the restaurant's own WhatsApp with an itemized order, quantities and total already written. No app for the diner to install, no hardware for the shop, no per-order fee from Firststone.
+**What it does (full promise):** One small team designs the visuals a customer sees (digital and printed menus, product ads, social content) and sets up the simple systems behind them (orders moving from counter to kitchen, stock on the shelf, prices that match on every screen). After go-live it supports, updates and keeps the setup running on a monthly plan.
 **Product category:** "The setup partner" for small businesses. Owners will not search for that phrase. They search for, or ask a friend about, *digital menu*, *QR menu*, *منيو ديجيتال*, *a designer for my menu*, *a system for orders*, *a program for the shop*. Copy names the category; SEO and ads target the search terms.
 **Product type:** Productized service with recurring plans (setup package + monthly plan). Some delivered tools are software, but the buyer is buying a done-for-you service.
 **Business model:** One-off **setup packages** (fixed scope, fixed price) plus **monthly plans** (support, content updates, menu and price changes). Recurring plans are the business; setup is the entry point. Prices **[NEED]**, see `../marketing/02-offer-and-pricing.md`.
 
 ## Target Audience
-**Target companies:** Independent cafés, restaurants, bakeries, mini-markets and retail shops with 1–5 branches in Greater Cairo **[confirm city focus]**. Gulf (KSA/UAE) is phase 2 and is kept out of launch messaging.
+**First-fit segment:** takeaway- and delivery-heavy food places (foul, ta'meya, grills, sandwiches, bakeries) that already take orders by phone or WhatsApp. 3amo Fouad (New Cairo + North Coast branches) is this profile.
+**Target companies (full range):** Independent cafés, restaurants, bakeries, mini-markets and retail shops with 1–5 branches in Greater Cairo **[confirm city focus]**. Gulf (KSA/UAE) is phase 2 and is kept out of launch messaging.
 **Decision-makers:** The owner, usually hands-on in the shop. In larger units, an owner-manager pair where the manager feels the daily pain and the owner signs off on spend.
 **Primary use case:** Getting the business out of improvisation: wrong menu prices, lost paper order slips, orders arriving over WhatsApp, visuals that look home-made next to the chains.
 **Jobs to be done:**
@@ -49,6 +51,7 @@
 *(Desk research, Oct 2026. Re-verify before any public comparison. Never name competitors in ads or posts.)*
 **Direct:** QR/digital-menu vendors (eMenu, QRMenuPro, Billqode). They fall short because they sell one product and stop there.
 **Secondary:** Foodics, BIM POS / Compuware. They fall short for a 1–5-branch shop because the price and feature set target chains, and they don't handle the shop's visuals.
+**Ordering alternatives:** delivery apps (e.g., Talabat, elmenus ordering) bring new diners but take a commission on each order **[verify current Egyptian commission levels before any comparison]**; a QR ordering page brings repeat and walk-in customers' orders straight to the shop's WhatsApp for a flat fee. Position it alongside the apps, never against them.
 **Indirect:** Freelancers and print shops (one-off, not there next month); a nephew who "knows computers"; paper and WhatsApp.
 
 ## Differentiation
@@ -66,10 +69,12 @@
 |-----------|----------|
 | "How much per month?" | Answer with the number, in the first message. Packages are fixed and written. **[NEED: prices]** |
 | "A freelancer will do the menu for a few hundred pounds." | True for a one-off design. Our price includes setting it up on your screens, changing prices when you need, and someone who answers next month. |
-| "Does it work if the internet drops?" | Each system has a defined fallback, shown before you pay. **[NEED: per-product fallback, verified]** |
+| "Does it work if the internet drops?" | The menu page opens on the customer's own mobile data, so the shop's WiFi doesn't matter, and the printed menu carries the same prices. If WhatsApp is down, the phone number is on the menu. **[verify: page hosting uptime and load time on a weak connection]** |
 | "My staff won't use it." | We train your team on handover day and keep the tool to what they need. |
 | "What if you disappear too?" | Written support response time, and your designs and data are yours to take. **[NEED: SLA a two-person team can keep]** |
 | "I already have Foodics / a POS." | Keep it. We set up the look around it (menus, screens, ads). |
+| "I'm already on Talabat." | Keep it for new diners. The QR menu is for your regulars and walk-ins to order straight to your WhatsApp, with no commission per order. |
+| "Customers won't scan a QR." | They don't have to download anything; the page opens in the phone's browser. The printed menu with the same prices stays on the table. |
 
 **Anti-persona:** Chains of 10+ branches that need enterprise POS, integrations and accounting; owners shopping for the cheapest one-off design; anyone wanting guaranteed sales numbers or viral growth.
 
@@ -123,13 +128,14 @@
 
 ## Proof Points
 **Metrics:** None yet. Pre-launch.
-**Customers:** None yet. No client names, logos or counts until real and permission-granted.
+**Customers:** One delivered example, 3amo Fouad (printed menu + QR ordering page). **Not for public use until the owner gives written permission** (`../marketing/cases/3amo-fouad.md`). No client counts or results until real.
 **Testimonials:** None yet.
 > **[NEED: first quote, with permission]**
 **Value themes:**
 | Theme | Proof |
 |-------|-------|
-| One team for look + systems | True by design; show it with a before/after of one shop's menu, screen and ad **[NEED: first case]** |
+| One team for look + systems | 3amo Fouad: illustrated print menu and the matching ordering page, same look, same prices **[permission pending]** |
+| Orders arrive right | Itemized WhatsApp order with quantities and total, shown live in the demo |
 | Built to run every day | Go-live checklist + fallback per product **[NEED]** |
 | Clear prices, no surprises | Published packages and written scope **[NEED]** |
 | Support you can reach | Written WhatsApp response time **[NEED]** |
@@ -147,9 +153,11 @@ Not running ads yet. Hold paid until the name is cleared, prices are published a
 *Decisions and tested lessons. Newest first. Keep it to about 20 active entries.*
 | Date | Learning | Evidence | Applies to | Status |
 |------|----------|----------|------------|--------|
+| 2026-10-26 | Launch product is QR menu + WhatsApp ordering (as built for 3amo Fouad); kitchen and stock screens come later | Founders' decision, existing build | offers, copywriting, plan | active (decision) |
 | 2026-10-26 | Lead every message with all three of looks + runs + stays; any one alone is generic | Positioning red-flag check (`positioning.md`) | copywriting, social, ads | active (decision) |
 | 2026-10-26 | No proof claim goes public until it is operationally true | Founders' decision in brand foundations | all drafting skills | active (decision) |
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2 (2026-10-26) — Added the launch product (QR menu + WhatsApp ordering, built for 3amo Fouad), first-fit segment, delivery apps as an ordering alternative, two objections, and case #1 pending permission.
 - v1 (2026-10-26) — Initial context, auto-drafted from the Firststone brand foundations; customer language marked as hypotheses pending owner interviews.

@@ -6,7 +6,9 @@
 **Status:** Draft v1 for founder review
 **Reads first:** `../.agents/product-marketing.md`
 
-> **Scope note.** The skill's full template targets funded SaaS (ARR phases, funding rounds, a 139-idea bank). Firststone is a pre-launch, bootstrapped, productized local service with no clients, no prices and no website yet. All 13 sections are kept, but trimmed to what this stage can use. Where the template asks for data that doesn't exist (CAC, LTV, retention), it is listed as an open decision in §13 rather than estimated.
+> **v1.1 (2026-10-26):** updated after the founders shared the 3amo Fouad work (printed menu + QR ordering page). The launch package is now that product; see `cases/3amo-fouad.md`.
+>
+> **Scope note.** The skill's full template targets funded SaaS (ARR phases, funding rounds, a 139-idea bank). Firststone is a pre-launch, bootstrapped, productized local service with one delivered example (3amo Fouad), no published prices and no website yet. All 13 sections are kept, but trimmed to what this stage can use. Where the template asks for data that doesn't exist (CAC, LTV, retention), it is listed as an open decision in §13 rather than estimated.
 
 ---
 
@@ -17,7 +19,7 @@
 **Three bets, ranked by leverage**
 
 1. **Win a neighbourhood, not a market.** Small F&B and retail owners buy on what they see next door and on who recommends you. Concentrating the first 10 clients in 1–2 neighbourhoods makes every delivered menu, screen and window sticker visible to the next prospect. Field visits with a free menu draft beat any online channel at this stage, because the buyer is standing in the shop, not searching.
-2. **Sell one productized offer before selling the full range.** The brand promises looks + runs + stays, but delivering custom order and stock systems to the first clients would break a two-person team. Launch with a fixed-scope "Menu setup" package (designed menu, digital screen or QR version, printed version, price updates on a monthly plan) and add order and stock screens as named add-ons once the menu offer is repeatable. This keeps the "affordable" promise profitable.
+2. **Sell one productized offer before selling the full range.** The brand promises looks + runs + stays, but delivering custom order and stock systems to the first clients would break a two-person team. Launch with the package already built once for 3amo Fouad: **QR menu + WhatsApp ordering** (printed menu with QR, a mobile menu page with search and a cart, orders sent to the restaurant's own WhatsApp as an itemized message with the total; price updates on a monthly plan). It covers "looks" and the first piece of "runs" with no app, no hardware and no per-order fee. Kitchen and stock screens come later as named add-ons. This keeps the "affordable" promise profitable.
 3. **Make WhatsApp the storefront.** The conversion action, the sales conversation, delivery updates and support all happen on WhatsApp. A tidy WhatsApp Business setup (catalogue with package prices, quick replies, labels as a pipeline) is worth more in the first 90 days than a full website. The website is a one-page credibility check that sends people to WhatsApp.
 
 **What 12 months plausibly looks like**
@@ -48,6 +50,7 @@ A new category, "the setup partner". At the moment of decision the owner compare
 
 ### Who we're for
 - Independent cafés, restaurants, bakeries, mini-markets and shops, 1–5 branches, Greater Cairo first.
+- **First-fit segment for the launch product:** takeaway- and delivery-heavy food places (foul, ta'meya, grills, sandwiches, bakeries) that already take orders by phone or WhatsApp. That is where an itemized WhatsApp order with the total saves the most mistakes. 3amo Fouad is this profile.
 - The owner decides, usually on the floor; price-aware; Arabic-first.
 - Stated problem: "my menu looks bad / prices are wrong". Real problem: no one reliable owns how the place looks and runs.
 - What they're actually buying: relief from chasing suppliers, and looking like the bigger places.
@@ -83,7 +86,7 @@ No marketing hire, and none needed in the first 6 months. Execution help, if nee
 Bootstrapped, under $2K/month total tier. Assume close to $0 paid. Spend goes on: domain and simple hosting, WhatsApp Business (free app), printing (sample menus, stickers, business cards), a demo tablet, transport for field visits. **[NEED: actual monthly budget.]**
 
 ### Phase
-Pre-revenue. The binding constraint is not awareness but **proof and capacity**: no prices, no cases, no SLA, and unknown founder hours.
+Pre-revenue, with one delivered example (3amo Fouad). The binding constraint is **proof and capacity**: no published prices, no permission-granted case yet, no SLA, and unknown founder hours.
 
 ### What's already done (build on it)
 | Asset | Status | Marketing leverage |
@@ -92,6 +95,7 @@ Pre-revenue. The binding constraint is not awareness but **proof and capacity**:
 | Identity: mark, palette, type, logo files | Done (Arabic logotype pending) | Social avatars, cards, menus, sticker, site |
 | Brand film, 43.75 s, plus 11 stills | Done | Website hero, Instagram/Facebook launch post, pinned post, pitch opener on a tablet |
 | Name "Firststone" | Working name | Blocked: trademark, domain, handle checks pending |
+| 3amo Fouad: printed menu + QR ordering page | Delivered **[confirm: paying client or pilot; live and in use?]** | The launch product, already built; the field-sales demo; case #1 once the owner gives written permission (`cases/3amo-fouad.md`) |
 
 ### In flight / stuck
 | Item | Status | Blocker |
@@ -111,12 +115,12 @@ Pre-revenue. The binding constraint is not awareness but **proof and capacity**:
 | Customer research | 1 | Language is hypotheses only |
 | Messaging and voice | 4 | Unusually complete for pre-launch |
 | Visual identity | 4 | Done; Arabic logotype open |
-| Offer and pricing | 1 | Structure implied, no packages or prices |
+| Offer and pricing | 2 | Product defined and built once (QR menu + WhatsApp ordering); no prices |
 | Website | 0 | None |
 | Local presence (Google, maps) | 0 | None |
 | Social presence | 0 | Handles not secured |
 | Messaging channel (WhatsApp) | 0 | Not set up |
-| Proof (cases, testimonials) | 0 | None, expected at this stage |
+| Proof (cases, testimonials) | 1 | One delivered example; not publishable until the owner agrees |
 | Referral mechanics | 2 | Designed (sticker, credit), not built |
 | Sales process | 1 | No pipeline, scripts or leave-behind |
 | Delivery and support model | 1 | Principles written, no checklist or SLA |
@@ -135,7 +139,7 @@ Pre-revenue. The binding constraint is not awareness but **proof and capacity**:
 Nothing live. No handles, no site, no listings.
 
 ### Moves
-**Move 1 — Neighbourhood field sales (primary).** Pick 1–2 neighbourhoods where the founders can visit regularly **[NEED: choose; the story draft uses Heliopolis as a placeholder]**. Walk in during off-peak hours (10:30–12:00, 16:00–18:00), ask for the owner, and offer one concrete thing: "Send us a photo of your menu. We'll send a free draft by Thursday." Carry a tablet with the brand film and one live demo menu. Log every visit as a WhatsApp label (§5). Target: 15–20 visits a week once the offer is priced. *Skills: `sales-enablement` (leave-behind, later), `copywriting`.*
+**Move 1 — Neighbourhood field sales (primary).** Pick 1–2 neighbourhoods where the founders can visit regularly **[NEED: choose; the story draft uses Heliopolis as a placeholder]**. Walk in during off-peak hours (10:30–12:00, 16:00–18:00), ask for the owner, and offer one concrete thing: "Send us a photo of your menu. We'll send a free draft by Thursday." Carry a phone or tablet with the brand film and the live 3amo Fouad menu: let the owner add two items to the cart and see the order arrive on WhatsApp. That 30-second demo shows looks and runs at once. Log every visit as a WhatsApp label (§5). Target: 15–20 visits a week once the offer is priced. *Skills: `sales-enablement` (leave-behind, later), `copywriting`.*
 
 **Move 2 — Free menu draft (the lead magnet).** The only free thing Firststone gives away: a one-page redesign draft of the owner's current menu, in Firststone's system, delivered on WhatsApp within 3 working days. It proves "well-designed" in the owner's own context and opens the sales conversation. Cap it to protect capacity (e.g., 5 drafts a week). *Skills: `offers`, `copywriting`.*
 
@@ -193,7 +197,7 @@ The cheapest channel Firststone has, and already designed into the identity.
 
 ## 8. Revenue
 
-- **Packages:** one launch package (Menu setup), two named add-ons (Order screen, Stock screen) introduced once each has a go-live checklist and a fallback, and two monthly plans. Full structure in `02-offer-and-pricing.md`.
+- **Packages:** one launch package (QR menu + WhatsApp ordering), two named add-ons (Kitchen screen, Stock screen) introduced once each has a go-live checklist and a fallback, and two monthly plans. Full structure in `02-offer-and-pricing.md`.
 - **Founding-client price:** the first 5 clients pay a founding price, locked for 12 months, in exchange for written permission to document and publish their case. This is real scarcity (5 slots, capacity-limited) and the fastest route to proof.
 - **Price method:** pick a price you can learn from, publish it, raise it for new clients once the founding slots fill and owners stop pushing back. Use the interview questions in `03-customer-interviews.md` to test price ranges before setting them.
 
@@ -219,7 +223,7 @@ Weeks start Monday 2 Nov 2026. Owners: **F** = Fady, **H** = Hamdy. Rows marked 
 |---|---|---|
 | Trademark search + domain + handles for Firststone; decide by end of week 2 (fallbacks: Cornerline, Mainstay) | Foundation | F |
 | Employer outside-business and communication policy check | Foundation | F |
-| Decide launch package scope, founding price, plan price, support response time | Revenue | F + H |
+| Decide founding price, plan price and support response time for QR menu + WhatsApp ordering; ask 3amo Fouad's owner for case permission | Revenue | F + H |
 | Write go-live checklist v1 and the offline fallback for the menu package | Activation | F |
 | Recruit 8–10 owners for conversations (`03-customer-interviews.md`) | Research | H? |
 | Install WhatsApp Business on a dedicated number; profile, greeting, away message, labels | Activation | F |
@@ -249,7 +253,7 @@ Weeks start Monday 2 Nov 2026. Owners: **F** = Fady, **H** = Hamdy. Rows marked 
 |---|---|---|
 | Ramadan menu setup offer to every contact, client and neighbour (sell by mid-Jan, deliver before Ramadan) | Revenue | F + H |
 | First monthly "what changed" messages to clients on plans | Retention | F |
-| Document 1–3 cases with permission (photos, before/after, one owner quote) | Proof | H? |
+| Document 1–3 cases with permission (photos, before/after, one owner quote); 3amo Fouad first, from week 1 if the owner agrees | Proof | H? |
 | Referral reward announced to live clients; stickers on every agreeing shop | Referral | F + H |
 | 90-day review: funnel by label, hours per client, price pushback, churn reasons; bump `product-marketing.md` | Measurement | F + H |
 
@@ -263,7 +267,7 @@ Weeks start Monday 2 Nov 2026. Owners: **F** = Fady, **H** = Hamdy. Rows marked 
 
 **Q2 (Feb–Apr) — Ramadan and proof.** Deliver the Ramadan wave; publish 3 cases; launch the referral reward; first click-to-WhatsApp ad test in the chosen neighbourhoods with a kill rule. KPIs: referral share of new clients; plan retention at 90 days; cost per qualified WhatsApp conversation.
 
-**Q3 (May–Jul) — Second package.** Introduce Order screen *or* Stock screen (whichever interviews and clients ask for most) after verifying e-invoicing/e-receipt obligations and writing its fallback. Start light SEO for local search terms if the site has steady traffic. KPIs: add-on attach rate; plan revenue share of total revenue.
+**Q3 (May–Jul) — Second package.** Introduce Kitchen screen *or* Stock screen (whichever interviews and clients ask for most) after verifying e-invoicing/e-receipt obligations and writing its fallback. Start light SEO for local search terms if the site has steady traffic. KPIs: add-on attach rate; plan revenue share of total revenue.
 
 **Q4 (Aug–Oct) — Decide the next curve.** With 20–30 clients' data: decide whether to add a third neighbourhood, hire delivery help, raise prices, or test the Gulf. KPIs: 12-month plan retention; revenue per founder hour.
 
@@ -348,7 +352,7 @@ The skill cross-references a 139-idea library; that library (`marketing-ideas`) 
 1. **Founder hours per week.** Decides support time, visits per week and how many clients can be served. Every target above scales with it.
 2. **Hamdy's role and background.** Decides who owns design, content and field sales, and fills the story slots.
 3. **Name clearance.** Blocks printing, Google profile, stickers and ads.
-4. **Package scope and prices.** Blocks quotes, website and WhatsApp catalogue.
+4. **Prices for the QR menu + WhatsApp ordering package.** Blocks quotes, website and WhatsApp catalogue. (Scope is now settled by the 3amo Fouad build.)
 5. **Support response time.** Blocks the "support you can reach" proof.
 6. **Employer policy.** Blocks any public mention of Fady's background.
 7. **E-invoicing / e-receipt obligations.** Blocks the order-screen package (not the menu package).

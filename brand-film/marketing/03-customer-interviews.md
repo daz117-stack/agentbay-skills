@@ -78,7 +78,7 @@ Rules: ask about the past, not the future ("last time" beats "would you"). Don't
 13. Show the tagline «ابدأ من هنا… ابدأ صح». Ask: «لو شفت الجملة دي على شنطة أو ستيكر، تفتكرها شركة بتعمل إيه؟» (If you saw this on a bag or sticker, what would you think the company does?)
 
 ### F. Price range (inputs for `02-offer-and-pricing.md` §4)
-Adapted Van Westendorp, for the Menu setup described in one sentence, then for a monthly updates plan:
+Adapted Van Westendorp, for the QR menu + WhatsApp ordering setup described in one sentence, then for a monthly updates plan:
 14. «بكام يبقى غالي لدرجة إنك متفكرش فيه؟» (At what price is it so expensive you wouldn't consider it?)
 15. «بكام يبقى رخيص لدرجة إنك تشك في الجودة؟» (So cheap you'd doubt the quality?)
 16. «بكام يبقى غالي بس ممكن تفكر؟» (Expensive, but you might consider it?)

@@ -30,21 +30,22 @@ Productized service (`offers` → service/freelance playbook): a named scope, a 
 | Step | What it is | Price |
 |---|---|---|
 | **Free menu draft** | One-page redesign of the owner's current menu in Firststone's system, sent on WhatsApp within 3 working days of the photo. Capped at 5 a week. | Free |
-| **Menu setup** (launch package) | The core offer, below | **[NEED] EGP**, one-off |
+| **QR menu + WhatsApp ordering** (launch package) | The core offer, below | **[NEED] EGP**, one-off |
 | **Monthly plan: Updates** | Keeps the setup right every week | **[NEED] EGP/month** |
 | **Monthly plan: Updates + content** | Updates, plus a set number of ads/posts each month | **[NEED] EGP/month** |
-| **Add-ons** | Extra screen · product ad pack · Ramadan/seasonal menu · later: Order screen, Stock screen | **[NEED]** each |
+| **Add-ons** | Illustrated cover / brand artwork (as on 3amo Fouad) · product ad pack · Ramadan/seasonal menu · extra branch · later: kitchen screen, stock screen | **[NEED]** each |
 
-### Menu setup: the core deliverable
-- Menu designed in Arabic and English, on the client's own brand (logo, colours) using Firststone's layout system
-- A digital version: QR menu **or** one menu screen **[decide which is the default]**
-- Print-ready files for the counter and tables
-- Prices entered once and updated everywhere on the plan
-- Menu photos taken or tidied **[decide: in scope, or add-on]**
-- Handover on site: a 30-minute walk-through for staff, a one-page "how to ask for changes" card
-- Go-live checklist completed and signed off with the owner (tested, documented, trained, fallback defined)
-- **Timeline:** live within **[5] working days** of receiving the photos and current prices
-- **Out of scope** (written in the quote): order and stock systems, logo design, printing costs, hardware
+### QR menu + WhatsApp ordering: the core deliverable
+Built once already, for 3amo Fouad (`cases/3amo-fouad.md`). Each new client gets the same build in their own look:
+- **Print-ready menu (PDF, A4)** designed on the client's brand: cover, sections, size columns (e.g., quarter / half / kilo; baladi / shami bread), prices in EGP, branches, WhatsApp number and the QR code
+- **Mobile menu page** (opens from the QR in any phone browser, no app): Arabic, category tabs, search, item sizes, light and dark mode
+- **Ordering:** cart with quantities and running total (kept if the page reloads), pickup or delivery, name, address and notes, then **Send on WhatsApp**, which opens the restaurant's own WhatsApp with the itemized order and total already written
+- **Prices kept identical** on the page and the PDF; on the monthly plan, one change request updates both
+- **Handover on site:** 15 minutes with whoever answers the shop's WhatsApp (how orders arrive, how to confirm them), plus a one-page "how to ask for changes" card
+- Go-live checklist completed and signed off (every item and price checked against the owner's list, tested on Android and iPhone, QR tested from print)
+- **Timeline:** live within **[5] working days** of receiving the current menu and prices
+- **Out of scope** (written in the quote): printing costs, logo or illustration design (quoted separately), payment collection, delivery-fee calculation, kitchen and stock screens, delivery-app integration
+- **[decide]** Where the page is hosted and on whose domain. Recommendation: Firststone hosts it on the plan; the client can take the files (a single static page) if they leave, in line with the no-lock-in promise.
 
 ### Extras that come with every setup (bonus stack)
 Kept small and real; each one makes the client more self-sufficient or makes the core easier to use.
@@ -76,7 +77,7 @@ Second risk reversal, stated once near the price: "Stop the plan any month. Your
 **Why 6 months and not 12:** EGP costs move quickly. A 12-month lock is a stronger offer but can turn founding clients unprofitable. Founders' call; 6 months is the safer default.
 
 ### Naming
-Plain descriptors that say what the thing does (the voice guide rules out product names like "POS" and favours "order screen", "digital menu"). Named offers beat unnamed ones, so the names are fixed and reused everywhere: **Menu setup**, **Monthly plan: Updates**, **Monthly plan: Updates + content**, **Order screen**, **Stock screen**. Arabic equivalents **[decide with Arabic copy pass]**, e.g. «تجهيز المنيو», «باقة التحديثات الشهرية».
+Plain descriptors that say what the thing does (the voice guide rules out product names like "POS" and favours "order screen", "digital menu"). Named offers beat unnamed ones, so the names are fixed and reused everywhere: **QR menu + WhatsApp ordering**, **Monthly plan: Updates**, **Monthly plan: Updates + content**, **Kitchen screen**, **Stock screen**. Arabic equivalents **[decide with Arabic copy pass]**, e.g. «منيو QR وطلبات على واتساب», «باقة التحديثات الشهرية».
 
 ---
 
@@ -92,7 +93,7 @@ Plain descriptors that say what the thing does (the voice guide rules out produc
 
 `pricing`: the first price is a bet to learn from, not an optimum. Steps:
 
-1. **Cost floor (do first).** Estimate delivery hours for one Menu setup and for one plan-month. Multiply by the hourly value the founders need, add materials and transport. Neither price may sit below this.
+1. **Cost floor (do first).** Estimate delivery hours for one QR menu + WhatsApp ordering setup and for one plan-month. Multiply by the hourly value the founders need, add materials and transport. Neither price may sit below this.
 2. **Alternative anchor.** What the owner pays today for the closest substitute: a freelancer menu design, a QR-menu setup (desk research found offers from about $20 on freelance marketplaces, which is the floor owners will compare against), a print shop. Collect real numbers in the owner conversations.
 3. **Value ceiling.** What one fewer price argument a day, or one fewer lost order at rush hour, is worth to them. Ask in interviews (`03-customer-interviews.md` §4).
 4. **Pick round numbers** between anchor and ceiling, above the floor. Avoid an ultra-low price "to get started": it attracts the wrong clients and is very hard to raise.
@@ -108,11 +109,12 @@ Plain descriptors that say what the thing does (the voice guide rules out produc
 ```
 عرض Firststone لـ [اسم المكان]
 
-تجهيز المنيو
-• منيو عربي وإنجليزي بتصميم على شكل مكانك
-• نسخة ديجيتال: [QR / شاشة]
-• ملفات جاهزة للطباعة
-• تدريب الفريق يوم التسليم
+منيو QR وطلبات على واتساب
+• منيو مطبوع بتصميم على شكل مكانك، وعليه QR
+• صفحة المنيو على الموبايل: بحث، أحجام، سلة
+• الطلب يوصلك على واتساب مكتوب بالأصناف والإجمالي
+• استلام من الفرع أو توصيل
+• تدريب اللي بيرد على الواتساب يوم التسليم
 السعر: [X] جنيه (مرة واحدة)
 جاهز خلال [5] أيام عمل من استلام صور المنيو والأسعار
 
@@ -123,7 +125,7 @@ Plain descriptors that say what the thing does (the voice guide rules out produc
 
 لو التسليم اتأخر عن الميعاد بسببنا، أول شهر في الباقة مجاني.
 
-مش داخل في العرض: الطباعة، الأجهزة، أنظمة الطلبات والمخزون.
+مش داخل في العرض: تكلفة الطباعة، الرسومات الخاصة، التحصيل، رسوم التوصيل، شاشات المطبخ والمخزون.
 ```
 
 English equivalent for decks and the website lives in `04-website-copy.md` §Packages.
@@ -131,8 +133,9 @@ English equivalent for decks and the website lives in `04-website-copy.md` §Pac
 ---
 
 ## 6. Open decisions
-1. Default digital format for Menu setup: QR or one screen (hardware cost and support load differ a lot).
-2. Whether photography is in scope.
-3. Support hours and reply time the founders can keep every week.
-4. Founding-price lock: 6 or 12 months.
-5. The prices themselves, after the owner conversations.
+1. ~~Default digital format~~ Settled: QR menu + WhatsApp ordering, as built for 3amo Fouad.
+2. Hosting and domain for client menu pages (Firststone-hosted on the plan is recommended).
+3. Whether item photos are in scope (3amo Fouad's page has none; photos raise cost and update work).
+4. Support hours and reply time the founders can keep every week.
+5. Founding-price lock: 6 or 12 months.
+6. The prices themselves, after the owner conversations. 3amo Fouad's actual price (if paid) is the first real data point.

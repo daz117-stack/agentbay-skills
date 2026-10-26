@@ -12,7 +12,7 @@ Firststone's output is customer-facing. Every delivered menu, screen and ad is s
 
 | Mechanism | What it is | Rule |
 |---|---|---|
-| **Credit line** | "Made by Firststone" in small mono type on screen footers and the bottom of printed menus | Default on; client can say no. Never on the client's own brand area |
+| **Credit line** | "Made by Firststone" in small mono type at the bottom of the QR ordering page and the last page of the printed menu, linking to Firststone's WhatsApp | Default on; client can say no. Never on the client's own brand area. The 3amo Fouad build doesn't carry one yet; add it if the owner agrees |
 | **Window sticker** | «متجهّز مع Firststone» ("Set up with Firststone"), mark on stone, with a QR to the WhatsApp chat | Ask at go-live; install only with permission. Print only after the name is cleared |
 | **Before/after posts** | Client's old and new menu side by side on Firststone's Instagram | Only with written permission (founding clients agree to this) |
 
@@ -26,7 +26,7 @@ The sticker's QR opens WhatsApp with a pre-filled message: «شفت الستيك
 
 **Reward (double-sided, paid in service, not cash):**
 - **Referrer:** one free month of their plan when the referred shop goes live.
-- **New client:** a seasonal menu (e.g., Ramadan) included free with their Menu setup.
+- **New client:** a seasonal menu (e.g., Ramadan) included free with their QR menu + WhatsApp ordering setup.
 
 Why service, not cash: it costs delivery hours rather than money, keeps the referrer on the plan (retention), and avoids "I'm being paid to recommend" awkwardness between neighbours. Present it as the bigger-feeling item: "a free month" reads better than a percentage.
 

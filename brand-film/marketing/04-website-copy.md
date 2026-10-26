@@ -12,7 +12,9 @@
 
 **Language: Arabic should lead.** `voice.md` assigns English to the website, but the audience is Arabic-first and the site's visitors are those owners. Recommendation: Arabic page at the root, English at `/en`, same structure, a language switch in the header. English copy is drafted below (it's the voice guide's register for web and decks); Arabic is given for the hero, headings and CTAs. The Arabic body needs a native copy pass in Egyptian-friendly light MSA, not a literal translation.
 
-**Don't sell what isn't ready.** Order and stock screens are in the brand promise but not in the launch offer (`02-offer-and-pricing.md` §3). The page presents "how it runs" through what the menu package actually delivers (prices right on every screen and table) and lists order and stock screens honestly as coming next, with a "tell me when it's ready" button that doubles as a demand test.
+**Don't sell what isn't ready.** Kitchen and stock screens are in the brand promise but not in the launch offer (`02-offer-and-pricing.md` §3). The page presents "how it runs" through what the launch product actually does (customers order from the QR menu and the order reaches the shop's WhatsApp written out with the total) and lists kitchen and stock screens honestly as coming next, with a "tell me when it's ready" button that doubles as a demand test.
+
+**Let the product sell itself.** The strongest thing on the page is a working demo: embed or link a live sample menu (3amo Fouad's, once the owner agrees, or a Firststone demo café) with a note: "Try it: add two items and press Send on WhatsApp."
 
 ---
 
@@ -46,14 +48,14 @@ Later (after cases):  /work/{client-slug}   one page per permission-granted case
 ### Hero
 **Eyebrow (mono):** MEDIA · SOFTWARE · BUSINESS SYSTEMS
 **H1:** Start here. Start right.
-**Subhead:** Firststone sets up how your place looks and how it runs (menus, screens, ads and prices that stay right) and then stays to keep it working. One team, clear prices, no surprises.
+**Subhead:** Firststone sets up how your place looks and how it runs (printed menus, a QR menu customers order from, ads, and prices that stay right) and then stays to keep it working. One team, clear prices, no surprises.
 **Primary CTA:** Get a free menu draft
 **Microcopy under CTA:** Send a photo of your menu on WhatsApp. We'll send a draft within 3 working days.
-**Visual:** brand film (muted autoplay loop of the "mess snaps into a system" scene) or still `t14.5.png`, replaced by a real client before/after once one exists.
+**Visual:** a phone showing the QR ordering page next to the printed menu it matches (3amo Fouad with permission, otherwise a demo café). Brand film as the secondary visual.
 
 **Arabic hero (`/`):**
 - H1: «ابدأ من هنا… ابدأ صح»
-- Subhead: «بنجهّز شكل مكانك وطريقة شغله: المنيو، الشاشات، الإعلانات، والأسعار مظبوطة في كل مكان. وبنفضل معاك بعدها.»
+- Subhead: «بنجهّز شكل مكانك وطريقة شغله: المنيو المطبوع، منيو QR الزبون يطلب منه على واتساب، الإعلانات، والأسعار مظبوطة في كل مكان. وبنفضل معاك بعدها.»
 - CTA: «ابعت صورة المنيو»
 - Microcopy: «ونبعتلك تصميم مقترح ببلاش خلال ٣ أيام عمل.»
 
@@ -78,8 +80,9 @@ Your menu, screens and ads are designed in your colours and your logo, in Arabic
 
 ### How it runs (#runs)
 **H2:** How it runs
-Change a price once and it changes everywhere: screen, QR menu and the files for print. Your staff get a 30-minute walk-through on handover day.
-**Coming next:** order screen (counter to kitchen) and stock screen (what to reorder). Tell us if you need one and we'll call you when it's ready.
+Customers scan the QR on the table or the counter, pick items and sizes, and press Send. The order reaches your WhatsApp written out: items, quantities, total, pickup or delivery, name and address. Nothing to download, for them or for you. Change a price once and we update the page and the print file together.
+**Try it:** [link to live demo menu]
+**Coming next:** kitchen screen (orders from counter to kitchen) and stock screen (what to reorder). Tell us if you need one and we'll call you when it's ready.
 **Button:** Tell me when it's ready
 **Arabic H2:** «طريقة شغله»
 
@@ -91,10 +94,10 @@ Message us on WhatsApp and get a reply [same business day]. Each month we send a
 
 ### Packages (#packages)
 **H2:** Clear prices before we start
-| Menu setup | Monthly plan: Updates | Monthly plan: Updates + content |
+| QR menu + WhatsApp ordering | Monthly plan: Updates | Monthly plan: Updates + content |
 |---|---|---|
 | **[X] EGP** once | **[Y] EGP** / month | **[Z] EGP** / month |
-| Menu designed in Arabic and English · QR menu or one screen · print-ready files · staff walk-through · live in [5] working days | Price and item changes · one small design change a month · WhatsApp support, reply [same business day] | Everything in Updates · [N] product ads or posts a month |
+| Printed menu with QR · mobile menu page with search and cart · orders to your WhatsApp with the total · pickup or delivery · live in [5] working days | Price and item changes · one small design change a month · WhatsApp support, reply [same business day] | Everything in Updates · [N] product ads or posts a month |
 | Get a free draft first | Stop any month | Stop any month |
 
 Below the table: "If your setup isn't live on the date in your quote, for a reason on our side, your first month of the plan is free."
@@ -115,7 +118,7 @@ Every setup goes through the same checklist before we hand it over:
 - Tested on your screens and your phones
 - Every price checked against your list
 - Staff walked through it
-- A plan for when the internet drops **[NEED: define the menu-package fallback, e.g. printed menu and offline-cached QR page, before publishing]**
+- A plan for when the internet drops: the page runs on the customer's data and the printed menu matches it
 - Signed off with you
 
 ### About (#about)
@@ -129,7 +132,13 @@ We're [Fady and Hamdy]. One of us has spent years making sure complex systems ch
 [Y] EGP for Updates, [Z] EGP for Updates + content. Setup is [X] EGP once.
 
 **Does it work if the internet drops?**
-[NEED: answer from the defined fallback.]
+The menu opens on your customer's own mobile data, so your shop's WiFi doesn't matter. The printed menu on the table has the same prices, and your phone number is on it. **[verify hosting uptime and load time on a weak 4G signal before publishing]**
+
+**Do my customers need to download an app?**
+No. The QR opens the menu in the phone's browser.
+
+**I'm already on Talabat.**
+Keep it for new customers. The QR menu is for your regulars and walk-ins to order straight to your WhatsApp, with no commission per order from us.
 
 **My staff aren't technical.**
 We train them on handover day and keep it to what they need. Most changes go through us on WhatsApp anyway.
@@ -152,9 +161,9 @@ Send a photo on WhatsApp. We'll send a free draft within 3 working days.
 ---
 
 ## 4. Meta
-- **Title (en):** Firststone | Menus, screens and simple systems for small cafés and shops in Cairo
-- **Meta description (en):** We set up how your place looks and runs: menus, screens, ads and prices that stay right, at clear package prices. Free menu draft on WhatsApp.
-- **Title (ar):** Firststone | تصميم وتجهيز المنيو والشاشات للكافيهات والمحلات في القاهرة
+- **Title (en):** Firststone | QR menus with WhatsApp ordering for restaurants and cafés in Cairo
+- **Meta description (en):** A printed menu and a QR menu your customers order from. Orders reach your WhatsApp with the total. Clear package prices. Free menu draft on WhatsApp.
+- **Title (ar):** Firststone | منيو QR وطلبات على واتساب للمطاعم والكافيهات في القاهرة
 - Add LocalBusiness structured data (name, area served, phone, opening hours, sameAs links) once the name is cleared. The `schema` skill isn't vendored; add it when the site is built.
 
 ---

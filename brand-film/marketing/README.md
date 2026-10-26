@@ -11,20 +11,22 @@ Go-to-market work built on the brand foundations in `../.agents/`, using the ven
 | `04-website-copy.md` | site-architecture, copywriting | One-page site structure, English copy with Arabic hero and headings, pre-publish check |
 | `05-whatsapp-playbook.md` | sms | WhatsApp Business setup, greeting, quick replies, labels as pipeline, flows, consent |
 | `06-referral-program.md` | referrals | Sticker and credit line, owner referral reward, Google reviews, partner referrals, tracking |
+| `cases/3amo-fouad.md` | — | Case #1: what was built (printed menu + QR WhatsApp ordering), product notes, permission checklist, case draft |
 
 ## The plan in one paragraph
 
-Win 1–2 Cairo neighbourhoods through field visits and a free menu draft; sell one productized offer (Menu setup + monthly plan) before order and stock systems; run sales, delivery and support on WhatsApp; let delivered work, stickers and owner referrals compound. Spend nothing that depends on the name until it's cleared, and publish no proof until it's true.
+Win 1–2 Cairo neighbourhoods through field visits and a free menu draft; sell one productized offer (QR menu + WhatsApp ordering, as built for 3amo Fouad, plus a monthly plan) before kitchen and stock screens; run sales, delivery and support on WhatsApp; let delivered work, stickers and owner referrals compound. Spend nothing that depends on the name until it's cleared, and publish no proof until it's true.
 
 ## Before anything goes public
 
 1. **Founder hours per week**: every target scales with it.
 2. **Hamdy's role**: who owns design, content and field sales.
 3. **Name clearance**: blocks printing, Google profile, stickers, ads.
-4. **Packages and prices**: blocks quotes, site, WhatsApp catalogue (decide after the owner conversations).
-5. **Support reply time**: blocks the "support you can reach" claim.
-6. **Employer policy check**: blocks any mention of Fady's professional background.
-7. **E-invoicing / e-receipt rules**: blocks the order-screen package, not the menu package.
-8. **Neighbourhood choice**: blocks field-sales routing.
+4. **Prices** for QR menu + WhatsApp ordering: blocks quotes, site, WhatsApp catalogue (decide after the owner conversations).
+5. **3amo Fouad permission**: blocks using case #1 publicly.
+6. **Support reply time**: blocks the "support you can reach" claim.
+7. **Employer policy check**: blocks any mention of Fady's professional background.
+8. **E-invoicing / e-receipt rules**: blocks the order-screen package, not the menu package.
+9. **Neighbourhood choice**: blocks field-sales routing.
 
 All `[NEED]` and `[confirm]` markers in these files are open items, not claims.

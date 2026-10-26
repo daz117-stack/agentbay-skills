@@ -19,7 +19,7 @@ Meta changes pricing and limits often; check the current rate card for Egypt bef
 **Setup (week 1):**
 - A dedicated business number, not a founder's personal one (so it can be handed between founders and survives staff changes).
 - Profile: Firststone mark on stone as avatar, category, description from `messaging.md` §06, area, hours, website.
-- **Catalogue:** one item per package with the price (Menu setup, Updates, Updates + content). Owners ask "how much?" first; the catalogue answers before you do.
+- **Catalogue:** one item per package with the price (QR menu + WhatsApp ordering, Updates, Updates + content). Owners ask "how much?" first; the catalogue answers before you do.
 - **Linked devices:** both founders on the same account.
 
 ---
@@ -87,7 +87,23 @@ Every Sunday: count chats per label. That count is the funnel report in `01-mark
 
 ---
 
-## 6. Consent and data
+## 6. Client side: the restaurant's order inbox
+
+With QR menu + WhatsApp ordering, the client's own WhatsApp becomes their order inbox. Setting it up is part of the handover, and it is where "runs" either works or doesn't.
+
+- **WhatsApp Business on the shop's number** (not the owner's personal one), with the shop's hours and address.
+- **Quick replies for orders** (Egyptian colloquial, the client's voice):
+  - `/ok` «وصل طلبك يا [الاسم]. هيكون جاهز خلال [٢٠] دقيقة.»
+  - `/fee` «رسوم التوصيل لـ [المنطقة]: [X] جنيه. الإجمالي [Y] جنيه. نأكد؟»
+  - `/out` «[الصنف] خلص النهارده. تحب [بديل]؟»
+  - `/ready` «طلبك جاهز.»
+- **Labels for order status:** `new`, `confirmed`, `out for delivery`, `done`. Whoever answers can see what's open at a glance.
+- **Away message** with opening hours, so orders sent after closing get an answer.
+- **Delivery fee:** the 3amo Fouad build says the fee is set after the address is known. Agree with each client who replies with the fee and how fast; a slow fee reply is where WhatsApp ordering loses the customer.
+
+This is in scope for every setup and takes about 15 minutes on handover day.
+
+## 7. Consent and data
 
 - **Opt-in before marketing messages.** Meta requires it. A client who messages you has started a conversation; that is not consent to broadcasts. Ask once, in plain words, at go-live: «تحب نبعتلك عروض المواسم (رمضان، العيد) هنا على واتساب؟ تقدر توقفها في أي وقت.» Log the yes.
 - **Easy stop.** Anyone who says stop gets one confirmation and no more marketing messages. Blocks lower the number's quality rating and can limit it.
@@ -97,6 +113,6 @@ Every Sunday: count chats per label. That count is the funnel report in `01-mark
 
 ---
 
-## 7. Click-to-WhatsApp ads (held until §4 Move 7 gates are met)
+## 8. Click-to-WhatsApp ads (held until §4 Move 7 gates are met)
 
 When unlocked: a Facebook/Instagram ad aimed at business owners in the chosen neighbourhoods, opening WhatsApp with a pre-filled first message («عايز تصميم مقترح للمنيو»). A reply within 24 hours opens Meta's free entry-point window (Meta says up to 7 days, as of 2026-10; check actual expiry in delivery data), so the whole draft → quote conversation can happen inside it. Ask for marketing opt-in in that chat. Kill rule: stop the ad if cost per conversation that reaches `draft requested` exceeds **[NEED: set from the first month's numbers]**.
