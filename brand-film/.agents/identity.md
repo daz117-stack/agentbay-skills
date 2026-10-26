@@ -4,13 +4,13 @@ Built with the `brand-identity` skill from `brand-context.md`, `positioning.md` 
 
 ## 01 — Identity strategy statement
 
-Firststone sets small businesses up right, so its identity must look **built, not decorated**. It should be precise enough to trust with daily operations and warm enough that a café owner feels it was made for them. The system rests on one idea from the film, **the load-bearing line**: every element is drawn on a grid, with one signal colour used sparingly and plain, generous typography. Affordability shows through restraint, not cheapness. Think well-made everyday objects (Muji, a good tool), not luxury.
+Firststone sets small businesses up right, so its identity must look **built, not decorated**. It should be precise enough to trust with daily operations and warm enough that a café owner feels it was made for them. The system rests on one idea from the film, **the load-bearing line**: every element is drawn on a grid, with one signal colour (cobalt) used sparingly and plain, generous typography. Affordability shows through restraint, not cheapness. Think well-made everyday objects (Muji, a good tool), not luxury.
 
 ## 02 — Logo direction
 
 **Primary direction:** symbol + wordmark lockup, with each part usable alone.
 
-**The symbol (keep the existing mark):** two identical L-shaped strokes, ink and signal orange, interlocking into a square with two open joints. With the name, its meaning becomes exact: **the first stone, a squared building block made of two equal parts** (two founders, one structure). It also inherits the corner meaning of Rokn, the founders' starting idea. Geometry is in `src/film.js` (200-unit box, 34-unit stroke, 44-unit gaps).
+**The symbol (keep the existing mark):** two identical L-shaped strokes, ink and cobalt, interlocking into a square with two open joints. With the name, its meaning becomes exact: **the first stone, a squared building block made of two equal parts** (two founders, one structure). It also inherits the corner meaning of Rokn, the founders' starting idea. Geometry is in `src/film.js` (200-unit box, 34-unit stroke, 44-unit gaps).
 
 **Wordmark:** "Firststone" in Archivo ExtraBold, width ~108%, sentence case, tight but not touching. The "stst" sequence needs custom kerning and no ligature gimmicks. Test at small sizes (WhatsApp avatar, menu footer).
 
@@ -26,29 +26,33 @@ Firststone sets small businesses up right, so its identity must look **built, no
 
 **3 logo references:**
 - **Muji:** borrow its *restraint*. Proof that affordable can look considered.
-- **Teenage Engineering:** borrow its *precision and labels*. Mono annotations, one orange accent, everything on a grid.
+- **Teenage Engineering:** borrow its *precision and labels*. Mono annotations, one accent colour, everything on a grid.
 - **Stripe** (wordmark era): borrow its *calm clarity*. A wordmark confident enough not to need decoration.
 
 ## 03 — Colour palette
 
+Chosen by the founders: **cobalt on stone** (replaces the earlier signal orange).
+
 | Role | Name | Hex | Notes |
 |---|---|---|---|
-| Primary (accent) | **Signal Orange** | `#FF4F1A` | Warmth, appetite, energy, "start". Use for the mark, highlights and offer blocks only. |
-| Base dark | **Ink** | `#131416` | Text, mark, dark plates |
-| Base light | **Paper** | `#F2EFE9` | Default background: warm, not clinical |
-| Surface | **Paper High** | `#FBFAF7` | Cards, UI surfaces |
-| Neutral | **Graphite** | `#5A5D63` | Secondary text, labels |
-| Line | **Rule** | `#D9D4CA` | Grids, dividers, borders |
-| Screen | **Screen** | `#17181B` | Dark digital menus and display UIs |
+| Primary (accent) | **Cobalt** | `#2F54EB` | Trust and dependability, with energy. Mark, highlights, offer blocks, tagline. |
+| Text on accent | **On-cobalt** | `#FAF9F6` | Light text on cobalt blocks (≈6:1). Ink on cobalt is only ≈3:1, so don't use it. |
+| Base dark | **Ink** | `#121417` | Text, mark, dark plates |
+| Base light | **Stone** | `#EEECE7` | Default background: warm stone-grey, not clinical white |
+| Surface | **Stone High** | `#FAF9F6` | Cards, UI surfaces |
+| Neutral | **Graphite** | `#575B63` | Secondary text, labels |
+| Line | **Rule** | `#D6D3CC` | Grids, dividers, borders |
+| Screen | **Screen** | `#151820` | Dark digital menus and display UIs |
 
-**Colour personality:** warm-neutral and practical, with one confident signal. A workshop, not a nightclub.
+**Colour personality:** calm and dependable (cobalt), grounded and warm (stone). Reads "tech you can trust" without the cold corporate-blue look.
 
 **Usage rules:**
-- About 70% paper, 25% ink/graphite, **≤5% orange**. Orange is a signal, never a background for long text.
-- **Contrast:** orange text on paper is ~3:1, so large display only (≥24 px bold). Ink on orange is ~5.6:1, fine for all sizes. White on orange is ~3:1, large text only.
-- Don't add a second accent. Client work uses the client's colours; Firststone's orange appears only in Firststone's own credit.
+- About 70% stone, 25% ink/graphite, **≤5% cobalt**. Cobalt is a signal, not a background for long text.
+- **Contrast:** cobalt text on stone is ≈5:1, fine for headlines and short lines. Stone text on cobalt is ≈6:1. Avoid ink on cobalt.
+- Don't add a second accent. Client work uses the client's colours; cobalt appears only in Firststone's own credit.
+- Keep "before/mess" visuals away from cobalt (e.g. use green chat bubbles), so mess never looks on-brand.
 
-**Palette type:** neutral + single complementary accent.
+**Palette type:** neutral + single accent.
 
 ## 04 — Typography
 
@@ -85,13 +89,13 @@ Firststone sets small businesses up right, so its identity must look **built, no
 ## 07 — Design principles
 
 - **Built on the line.** Every layout sits on a visible or implied 12-column grid. Alignment is the decoration.
-- **One signal.** Orange marks the one thing that matters on a page: the price, the new item, the action. If everything is orange, nothing is.
+- **One signal.** Cobalt marks the one thing that matters on a page: the price, the new item, the action. If everything is cobalt, nothing is.
 - **Real over polished.** Show real screens, real menus and real shops. The work is the proof.
 - **Legible in both languages.** Every piece must read at arm's length on a phone and across a counter, in Arabic and English.
 
 ## 08 — Brand expressions
 
-- **Social media:** a mono eyebrow (category) + Archivo headline + one real visual. Offers sit in an orange block with ink text. The profile picture is the mark on paper (WhatsApp, Instagram, Facebook use the same avatar).
+- **Social media:** a mono eyebrow (category) + Archivo headline + one real visual. Offers sit in a cobalt block with stone text. The profile picture is the mark on paper (WhatsApp, Instagram, Facebook use the same avatar).
 - **Website:** paper background, hero "Start here. Start right.", a live demo (digital menu or order screen), clear package prices, a WhatsApp CTA.
 - **Business cards:** front: mark + Firststone on paper. Back: name, role, phone, WhatsApp in mono. Arabic on the reverse side, mirrored layout.
 - **Presentations / proposals:** paper slides, a grid visible on section dividers, prices in Archivo, scope in mono tables.

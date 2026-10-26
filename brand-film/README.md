@@ -66,7 +66,7 @@ All of these live in `brand.config.json`. No animation code changes are needed.
 | Headline voice | `typography.displayStretch` / `displayWeight` (Archivo width 62–125 %) |
 | Any on-screen sentence | `copy.*` and `pillars[].word / .line` (`*word*` = accent colour, `|` = line break). Long text auto-shrinks to fit its column. |
 
-If the accent colour changes, also update the hard-coded `rgba(255,79,26,…)` glow values in `src/film.js` (search for `255,79,26`). They are used for translucent highlights only.
+Translucent accent tints are derived from `palette.accent` automatically. Set `palette.onAccent` to whichever of ink or paper reads best on the accent (check contrast ≥4.5:1).
 
 ## Vertical 9:16
 

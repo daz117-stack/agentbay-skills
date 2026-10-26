@@ -41,15 +41,19 @@ No video-generation model, 3D package or After Effects is available in this envi
 2. **Reference audio** was analysed as a signal only (≈90 BPM bed, steady energy). I did not hear its actual style.
 3. **Not photoreal.** Businesses are shown as architectural line drawings plus realistic UI, not filmed places or people. That is a deliberate style, but if you want real café or supermarket footage, it has to be shot or licensed.
 4. **No 9:16 version.** The structure supports one (see README), but each scene needs a vertical layout pass. I didn't compromise the 16:9 film to fake it.
-5. **Accent colour** is driven by config, except a few translucent orange glow values hard-coded in `src/film.js` (`255,79,26`). Search and replace them if the accent changes.
+5. **Accent colour:** fully config-driven (tints are derived from `palette.accent`; text on accent blocks uses `palette.onAccent`).
 6. **UI content is illustrative.** Order numbers, "128 orders, all on time", "Done 41 → 42", prices and SKUs are sample interface states, not claims about clients or results. No client names or performance metrics appear.
 7. **Repository location.** The project is committed on branch `claude/brand-film` of `agentbay-skills`, an unrelated skills collection, because that is the only repository attached to this session. It is self-contained in `brand-film/`, so it can be moved to a dedicated repository unchanged. Stills and the source zip are excluded from git because they can be regenerated.
 
 ## Decisions that need your input
 
 1. **Company name and logo.** When decided, set `identity.name` and optionally `identity.logoSrc`, then re-render. Until then the symbol-only lockup is shippable as a teaser.
-2. **Accent colour.** Signal orange was chosen for distinctiveness and warmth (restaurants, retail) and to avoid the generic SaaS blue/purple. Blue is the conventional "trust" colour. This is a brand call, not a technical one.
+2. **Accent colour.** Decided: cobalt on stone (see the update below).
 3. **Copy promises.** "No surprises", "Built to run, every single day" and "Customer notified automatically" are commitments the business will be held to. Keep them only if your service model backs them.
 4. **Language / market.** If your customers are primarily Arabic-speaking, an Arabic or bilingual cut needs an Arabic display typeface and RTL layouts. Not built yet.
 5. **Music.** Keep the original synthesised score, or license a track and keep only the sound design.
 6. **Where to store the project** (new repo, this repo on a branch, or just the downloaded files).
+
+## Update: Firststone version (cobalt on stone)
+
+The film was re-rendered with the working name **Firststone**, the tagline **"Start here. Start right."** and the founders' chosen palette, **cobalt on stone** (`brand.config.json`). Code changes: accent tints now come from the config, a new `onAccent` colour keeps text on cobalt blocks legible (≈6:1), the "before" chat bubble is green so mess never looks on-brand, and the tagline is styled in the display face as the closing line. The score is unchanged because the timing is unchanged. The temporary-identity version remains in git history (commit 7f3b63b).

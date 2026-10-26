@@ -6,7 +6,7 @@
 :root {
   /* Overwritten at load from brand.config.json */
   --paper: #F2EFE9; --paperHi: #FBFAF7; --ink: #131416; --graphite: #5A5D63;
-  --rule: #D9D4CA; --accent: #FF4F1A; --screen: #17181B;
+  --rule: #D9D4CA; --accent: #FF4F1A; --screen: #17181B; --onAccent: #131416; --accentRGB: 255,79,26;
   --display: 'FilmDisplay'; --sans: 'FilmSans'; --mono: 'FilmMono';
   --stretch: 112%; --dweight: 800;
 }
@@ -54,7 +54,9 @@ svg.abs { overflow: visible; }
   display: inline-block; font-family: var(--mono); font-weight: 600; font-size: 12px; letter-spacing: .12em;
   padding: 5px 9px 4px; border-radius: 4px; text-transform: uppercase; line-height: 1; white-space: nowrap;
 }
-.chip.new { background: var(--accent); color: var(--ink); }
+.chip.new { background: var(--accent); color: var(--onAccent); }
+/* Text sitting on an accent block (colour set per palette for contrast) */
+.on-accent, .on-accent .display, .on-accent .mono, .on-accent .sans { color: var(--onAccent); }
 .chip.ink { background: var(--ink); color: var(--paperHi); }
 .chip.ghost { background: transparent; color: var(--graphite); box-shadow: inset 0 0 0 1px var(--rule); }
 

@@ -16,6 +16,8 @@
   // ---------- Theme ----------
   const root = document.documentElement.style;
   for (const [k, v] of Object.entries(P)) root.setProperty('--' + k, v);
+  root.setProperty('--accentRGB', (h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)).join(','))(P.accent));
+  const ACC = (h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)).join(','))(P.accent);   // for translucent accent tints
   root.setProperty('--stretch', CFG.typography.displayStretch);
   root.setProperty('--dweight', CFG.typography.displayWeight);
 
@@ -114,7 +116,7 @@
         <div class="abs" style="left:160px;top:28px;font:800 26px var(--display);transform:skewX(-12deg);color:#c0392b">T4</div></div>`,
     status: `<div class="abs" style="inset:0;background:#fff;border-radius:22px;box-shadow:0 10px 24px -10px rgba(0,0,0,.35);padding:18px;box-sizing:border-box;font:500 17px var(--sans)">
         <div style="background:#E9E9EB;border-radius:16px;padding:9px 13px;width:fit-content;margin-bottom:8px">is my order ready??</div>
-        <div style="background:#2F7BF6;color:#fff;border-radius:16px;padding:9px 13px;width:fit-content;margin:0 0 8px auto">which one?</div>
+        <div style="background:#1FA855;color:#fff;border-radius:16px;padding:9px 13px;width:fit-content;margin:0 0 8px auto">which one?</div>
         <div style="background:#E9E9EB;border-radius:16px;padding:9px 13px;width:fit-content">the one from 20 min ago</div></div>`,
     menu: `<div class="abs" style="inset:0;background:#D9C3A0;box-shadow:0 8px 18px -8px rgba(0,0,0,.35)">
         <div class="abs" style="left:18px;top:14px;font:800 30px var(--display);font-stretch:80%;color:#222;transform:skewX(-8deg)">LATTE</div>
@@ -160,7 +162,7 @@
         <div class="display abs" style="left:26px;top:58px;font-size:84px">128</div>
         <div class="sans abs" style="left:28px;top:150px;font-size:19px;color:var(--graphite)">orders, all on time</div>
         <svg class="abs" width="200" height="110" style="right:26px;bottom:26px">${Array.from({ length: 10 }, (_, i) => { const h = [30, 46, 38, 60, 52, 70, 64, 82, 76, 96][i]; return `<rect x="${i * 20}" y="${110 - h}" width="12" height="${h}" rx="2" fill="${i === 9 ? 'var(--accent)' : 'var(--ink)'}" opacity="${i === 9 ? 1 : .85}"/>`; }).join('')}</svg></div>`,
-    ad: `<div class="card" style="inset:0;background:var(--accent);border-color:transparent">
+    ad: `<div class="card on-accent" style="inset:0;background:var(--accent);border-color:transparent">
         <div class="mono abs" style="left:26px;top:24px;font-size:13px;color:var(--ink)">Sat – Sun · 8 – 12</div>
         <div class="display abs" style="left:26px;top:64px;font-size:56px;font-weight:900;line-height:.95">Weekend<br>Breakfast</div>
         <div class="abs" style="right:24px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--accent);font:700 24px/46px var(--sans);text-align:center">→</div></div>`,
@@ -253,7 +255,7 @@
           <div class="display abs" data-k="a_title" style="left:40px;top:74px;font-size:40px;color:var(--paperHi)">Coffee</div>
           ${menuRows.map(([n, p], i) => `<div class="abs" data-k="a_row[]" style="left:28px;width:524px;top:${140 + i * 58}px;height:50px;display:flex;align-items:center;padding:0 12px;box-sizing:border-box;border-radius:4px;font:500 22px var(--sans);color:var(--paperHi)">
               <span>${n}</span><span style="flex:1;margin:0 14px;border-bottom:2px dotted rgba(251,250,247,.22);transform:translateY(6px)"></span><span style="font:500 22px var(--mono)">${p}</span></div>`).join('')}
-          <div class="abs" data-k="a_promo" style="left:592px;top:16px;width:368px;height:506px;background:var(--accent);border-radius:6px;overflow:hidden">
+          <div class="abs on-accent" data-k="a_promo" style="left:592px;top:16px;width:368px;height:506px;background:var(--accent);border-radius:6px;overflow:hidden">
             <span class="chip ink abs" data-k="a_pill" style="left:26px;top:26px">New</span>
             <div class="display abs" style="left:26px;top:70px;font-size:46px;font-weight:900;line-height:.98">Iced<br>Spanish<br>Latte</div>
             <svg class="abs" width="170" height="240" style="left:186px;top:214px"><g style="fill:none;stroke:var(--ink);stroke-width:3.2;stroke-linejoin:round;stroke-linecap:round">${svgLines([
@@ -326,7 +328,7 @@
               <span class="abs" style="left:420px;top:28px;width:170px;height:6px;border-radius:3px;background:var(--rule)"><span data-k="d_bar[]" data-v="${lv}" style="display:block;height:100%;width:0;border-radius:3px;background:${lv < .2 ? 'var(--accent)' : 'var(--ink)'}"></span></span>
               <span class="abs mono" style="right:0;top:20px;font-size:18px">${q}</span></div>`).join('')}
           <div class="card" data-k="d_toast" style="right:-12px;top:18px;width:330px;height:76px;border-radius:10px">
-            <div class="abs" style="left:16px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--accent);font:700 18px/34px var(--sans);text-align:center">✓</div>
+            <div class="abs on-accent" style="left:16px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--accent);font:700 18px/34px var(--sans);text-align:center">✓</div>
             <div class="sans abs" style="left:64px;top:16px;font-size:16px;font-weight:600">Reorder sent to supplier</div>
             <div class="mono abs" style="left:64px;top:44px;font-size:11px;color:var(--graphite)">24 × Milk 1 L · ETA tomorrow</div></div>
         </div>
@@ -336,7 +338,7 @@
       <div class="mono abs" style="left:22px;top:18px;font-size:12px">Milk 1 L · 40017</div>
       <svg class="abs" width="276" height="74" style="left:22px;top:46px">${(() => { const r = rng(5); let x = 0, s = ''; while (x < 270) { const w = 1 + Math.floor(r() * 4); s += `<rect x="${x}" y="0" width="${w}" height="74" fill="var(--ink)"/>`; x += w + 1 + Math.floor(r() * 3); } return s; })()}</svg>
       <div class="mono abs" style="left:22px;top:128px;font-size:12px;letter-spacing:.3em">6 221034 400170</div>
-      <div class="abs" data-k="d_scan" style="left:10px;right:10px;top:46px;height:3px;background:var(--accent);box-shadow:0 0 14px 3px rgba(255,79,26,.55)"></div>
+      <div class="abs" data-k="d_scan" style="left:10px;right:10px;top:46px;height:3px;background:var(--accent);box-shadow:0 0 14px 3px rgba(var(--accentRGB),.55)"></div>
     </div>`;
 
   // --- Cell C: campaign assets with one shared system
@@ -349,7 +351,7 @@
       <g style="stroke:var(--accent);stroke-width:1.5;fill:none" data-k="c_guides">${svgLines(['M700 180 H1820', 'M1230 120 V860', 'M700 620 H1820', 'M760 120 V860'])}</g>
       <g data-k="c_marks" style="font:600 11px var(--mono);fill:var(--accent)"><text x="1203" y="160">30</text><text x="1483" y="160">30</text><text x="1240" y="641">30</text></g>
     </svg>
-    <div class="abs" data-k="c_as[]" style="left:760px;top:180px;width:440px;height:440px;background:var(--accent);border-radius:6px;box-shadow:0 30px 60px -30px rgba(30,25,15,.5)">
+    <div class="abs on-accent" data-k="c_as[]" style="left:760px;top:180px;width:440px;height:440px;background:var(--accent);border-radius:6px;box-shadow:0 30px 60px -30px rgba(30,25,15,.5)">
       <div class="mono abs" style="left:30px;top:30px;font-size:12px">Bakery · From 7 am</div>
       <div class="display abs" style="left:30px;top:76px;font-size:62px;font-weight:900;line-height:.94">Fresh<br>every<br>morning.</div>
       <div class="mono abs" style="left:30px;bottom:32px;font-size:12px">Order ahead</div>
@@ -421,7 +423,7 @@
     k.a_row.forEach((r, i) => {
       set(r, { o: prog(Lc, .4 + i * .06, .9 + i * .06, E.outCubic), x: (1 - prog(Lc, .4 + i * .06, 1.1 + i * .06)) * 26 });
       const hl = i === 3 ? prog(Lc, 1.6, 1.9, E.outCubic) : 0;
-      r.style.background = `rgba(255,79,26,${(.16 * hl).toFixed(3)})`;
+      r.style.background = `rgba(${ACC},${(.16 * hl).toFixed(3)})`;
       r.style.boxShadow = hl > 0 ? `inset ${(4 * hl).toFixed(1)}px 0 0 var(--accent)` : 'none';
     });
     k.a_promo.style.clipPath = `inset(${(100 * (1 - prog(Lc, .55, 1.2, E.outExpo))).toFixed(2)}% 0 0 0)`;
@@ -655,7 +657,7 @@
       const a = 1.0 + j * .12, p = prog(Lt, a, a + .6, E.outExpo);
       set(m, { o: prog(Lt, a, a + .25, E.linear) * (1 - out), y: 50 * (1 - p), blur: 12 * out });
       const f = Math.sin(Math.PI * prog(Lt, a + .3, a + .9, E.linear));
-      m.style.outline = f > .02 ? `2px solid rgba(255,79,26,${(f * .9).toFixed(3)})` : 'none';
+      m.style.outline = f > .02 ? `2px solid rgba(${ACC},${(f * .9).toFixed(3)})` : 'none';
       m.style.outlineOffset = '6px';
     });
     set(k.eye, { o: prog(Lt, .1, .5, E.outCubic) * (1 - out) });
@@ -679,7 +681,7 @@
     </div>
     <div class="display abs center" data-k="desc" style="left:0;width:1920px;font-size:40px;font-weight:700;font-stretch:104%"></div>
     <div class="mono abs center" data-k="pill" style="left:0;width:1920px;color:var(--graphite)">${esc(ID.pillarsLine).replace(/ · /g, '&nbsp;&nbsp;<span class="accent">·</span>&nbsp;&nbsp;')}</div>
-    <div class="sans abs center" data-k="tag" style="left:0;width:1920px;font-size:26px;color:var(--graphite)">${esc(ID.tagline || '')}</div>
+    <div class="display abs center" data-k="tag" style="left:0;width:1920px;font-size:34px;font-weight:700;font-stretch:104%;color:var(--accent)">${esc(ID.tagline || '')}</div>
     <div class="mono abs center" data-k="contact" style="left:0;width:1920px;top:960px;font-size:13px;color:var(--ink)">${esc(contact)}</div>
   `);
   reveal.ready = () => {
@@ -707,7 +709,7 @@
     const below = hasName ? 610 : 590;
     k.desc.style.top = below + 'px';
     k.pill.style.top = (below + 74) + 'px';
-    k.tag.style.top = (below + 120) + 'px';
+    k.tag.style.top = (below + 128) + 'px';
   };
   reveal.update = t => {
     const k = reveal.k, Lt = t - S.reveal;
@@ -759,7 +761,7 @@
     // Soft light drifts across the paper; warm accent bloom very low.
     const lx = 50 + 9 * Math.sin(t * .17), ly = 42 + 6 * Math.cos(t * .13);
     const ax = 70 - 30 * clamp(t / DUR), ay = 70 - 10 * Math.sin(t * .1);
-    light.style.background = `radial-gradient(38% 46% at ${lx}% ${ly}%, rgba(255,255,255,.85), rgba(255,255,255,0) 70%), radial-gradient(30% 36% at ${ax}% ${ay}%, rgba(255,79,26,.07), rgba(255,79,26,0) 70%)`;
+    light.style.background = `radial-gradient(38% 46% at ${lx}% ${ly}%, rgba(255,255,255,.85), rgba(255,255,255,0) 70%), radial-gradient(30% 36% at ${ax}% ${ay}%, rgba(${ACC},.07), rgba(${ACC},0) 70%)`;
 
     // Dark plate for "Stable": wipes up from the bottom, leaves to the left.
     const up = prog(t, S.stable - .4, S.stable + .1, E.inOutExpo);
