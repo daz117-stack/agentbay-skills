@@ -14,7 +14,7 @@
 
 **Don't sell what isn't ready.** Kitchen and stock screens are in the brand promise but not in the launch offer (`02-offer-and-pricing.md` §3). The page presents "how it runs" through what the launch product actually does (customers order from the QR menu and the order reaches the shop's WhatsApp written out with the total) and lists kitchen and stock screens honestly as coming next, with a "tell me when it's ready" button that doubles as a demand test.
 
-**Let the product sell itself.** The strongest thing on the page is a working demo: embed or link a live sample menu (3amo Fouad's, once the owner agrees, or a Firststone demo café) with a note: "Try it: add two items and press Send on WhatsApp."
+**Let the product sell itself.** The strongest thing on the page is a working demo: link a sample copy of 3amo Fouad's ordering page that sends to Firststone's WhatsApp with a note: "Try it: add two items and press Send on WhatsApp."
 
 ---
 
@@ -51,7 +51,7 @@ Later (after cases):  /work/{client-slug}   one page per permission-granted case
 **Subhead:** Firststone sets up how your place looks and how it runs (printed menus, a QR menu customers order from, ads, and prices that stay right) and then stays to keep it working. One team, clear prices, no surprises.
 **Primary CTA:** Get a free menu draft
 **Microcopy under CTA:** Send a photo of your menu on WhatsApp. We'll send a draft within 3 working days.
-**Visual:** a phone showing the QR ordering page next to the printed menu it matches (3amo Fouad with permission, otherwise a demo café). Brand film as the secondary visual.
+**Visual:** a phone showing the QR ordering page next to the printed menu it matches (3amo Fouad). Brand film as the secondary visual.
 
 **Arabic hero (`/`):**
 - H1: «ابدأ من هنا… ابدأ صح»

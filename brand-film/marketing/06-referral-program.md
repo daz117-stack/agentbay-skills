@@ -2,18 +2,18 @@
 
 **Prepared with:** `referrals` skill (marketingskills), including the review-programs guidance
 **Reads first:** `../.agents/product-marketing.md`, `identity.md` §08 (referral engine)
-**Why it matters:** for an affordable local service, a neighbour's recommendation and a visible, well-made menu next door are the cheapest acquisition Firststone will ever have. The identity already designs for it (window sticker, "Made by Firststone" credit). This turns that into a program.
+**Why it matters:** for an affordable local service, a neighbour's recommendation and a visible, well-made menu next door are the cheapest acquisition Firststone will ever have. The founders chose not to put a Firststone credit on client work (27 Oct 2026), so the program relies on the portfolio, owner referrals and partners. This turns that into a program.
 
 ---
 
 ## 1. Viral potential: natural, through exposure
 
-Firststone's output is customer-facing. Every delivered menu, screen and ad is seen by diners and by neighbouring owners. That puts it at the "natural" end of the skill's viral-potential spectrum, so the program leads with **product-embedded exposure**, and adds a small reward on top.
+Firststone's output is customer-facing. Every delivered menu, screen and ad is seen by diners and by neighbouring owners. That puts it at the "natural" end of the skill's viral-potential spectrum, but without a credit on the work, that exposure is anonymous. The program therefore leads with **asking**: owner referrals with a small reward, partner referrals, and showing the work in Firststone's portfolio.
 
 | Mechanism | What it is | Rule |
 |---|---|---|
-| **Credit line** | "Made by Firststone" in small mono type at the bottom of the QR ordering page and the last page of the printed menu, linking to Firststone's WhatsApp | Default on; client can say no. Never on the client's own brand area. The 3amo Fouad build doesn't carry one yet; add it if the owner agrees |
-| **Window sticker** | «متجهّز مع Firststone» ("Set up with Firststone"), mark on stone, with a QR to the WhatsApp chat | Ask at go-live; install only with permission. Print only after the name is cleared |
+| ~~Credit line~~ | ~~"Made by Firststone" on delivered menus and pages~~ | **Dropped (founders' decision, 27 Oct 2026):** no Firststone credit on client work. Exposure comes from the portfolio, owner referrals and the work itself |
+| **Window sticker** | «متجهّز مع Firststone» ("Set up with Firststone"), mark on stone, with a QR to the WhatsApp chat | **[confirm the founders still want this]** given the no-credit decision. If yes: opt-in only, offered at go-live; print only after the name is cleared |
 | **Before/after posts** | Client's old and new menu side by side on Firststone's Instagram | Only with written permission (founding clients agree to this) |
 
 The sticker's QR opens WhatsApp with a pre-filled message: «شفت الستيكر عند [المكان]. عايز أعرف أكتر.» That gives attribution for free: the referring shop's name arrives in the first message. Use one QR per shop (a `wa.me` link with the shop name in the text) so each sticker is traceable.

@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2
+**Document version:** v3
 **Last updated:** 2026-10-26
 
 > Built with the `product-marketing` skill (marketingskills, auto-draft mode) from the brand foundations in this folder: `brand-context.md`, `positioning.md`, `messaging.md`, `voice.md`, `story.md`. Those files remain the source of truth for brand; this file translates them into the shape every marketing skill reads.
@@ -8,7 +8,7 @@
 
 ## Product Overview
 **One-liner:** Firststone sets up how a small café, restaurant or shop looks and how it runs (menus, ads, order and stock tools), then stays to keep it working.
-**Launch product (built once, for 3amo Fouad):** **QR menu + WhatsApp ordering.** A print-ready menu (PDF) carrying a QR code, and a mobile menu page in Arabic with category tabs, search, item sizes, a cart that survives a page reload, pickup or delivery, and a **Send on WhatsApp** button that opens the restaurant's own WhatsApp with an itemized order, quantities and total already written. No app for the diner to install, no hardware for the shop, no per-order fee from Firststone.
+**Launch product (built for 3amo Fouad; the printed menu + QR is live, the ordering page is the next step):** **QR menu + WhatsApp ordering.** A print-ready menu (PDF) carrying a QR code, and a mobile menu page in Arabic with category tabs, search, item sizes, a cart that survives a page reload, pickup or delivery, and a **Send on WhatsApp** button that opens the restaurant's own WhatsApp with an itemized order, quantities and total already written. No app for the diner to install, no hardware for the shop, no per-order fee from Firststone.
 **What it does (full promise):** One small team designs the visuals a customer sees (digital and printed menus, product ads, social content) and sets up the simple systems behind them (orders moving from counter to kitchen, stock on the shelf, prices that match on every screen). After go-live it supports, updates and keeps the setup running on a monthly plan.
 **Product category:** "The setup partner" for small businesses. Owners will not search for that phrase. They search for, or ask a friend about, *digital menu*, *QR menu*, *منيو ديجيتال*, *a designer for my menu*, *a system for orders*, *a program for the shop*. Copy names the category; SEO and ads target the search terms.
 **Product type:** Productized service with recurring plans (setup package + monthly plan). Some delivered tools are software, but the buyer is buying a done-for-you service.
@@ -128,13 +128,13 @@
 
 ## Proof Points
 **Metrics:** None yet. Pre-launch.
-**Customers:** One delivered example, 3amo Fouad (printed menu + QR ordering page). **Not for public use until the owner gives written permission** (`../marketing/cases/3amo-fouad.md`). No client counts or results until real.
+**Customers:** One delivered example, 3amo Fouad (owner Mostafa, a friend; paid in kind). Printed menu + QR live since about 24 Oct 2026; ordering page built, not yet live. **OK to show as portfolio work** (`../marketing/cases/3amo-fouad.md`). No client counts or results until real.
 **Testimonials:** None yet.
 > **[NEED: first quote, with permission]**
 **Value themes:**
 | Theme | Proof |
 |-------|-------|
-| One team for look + systems | 3amo Fouad: illustrated print menu and the matching ordering page, same look, same prices **[permission pending]** |
+| One team for look + systems | 3amo Fouad: illustrated print menu and the matching ordering page, same look |
 | Orders arrive right | Itemized WhatsApp order with quantities and total, shown live in the demo |
 | Built to run every day | Go-live checklist + fallback per product **[NEED]** |
 | Clear prices, no surprises | Published packages and written scope **[NEED]** |
@@ -153,11 +153,15 @@ Not running ads yet. Hold paid until the name is cleared, prices are published a
 *Decisions and tested lessons. Newest first. Keep it to about 20 active entries.*
 | Date | Learning | Evidence | Applies to | Status |
 |------|----------|----------|------------|--------|
+| 2026-10-27 | No "Made by Firststone" credit on client deliverables; show work in Firststone's portfolio instead | Founders' decision | referrals, identity, delivery | active (decision) |
+| 2026-10-27 | One place to update each client's menu data, feeding both the ordering page and the print PDF | Founders' decision; 3amo Fouad's PDF and ordering page had already drifted | delivery, monthly plan pricing | active (decision) |
+| 2026-10-27 | QR codes point to an address that never changes; update the content, never the URL | Printed QRs can't be updated | delivery | active (decision) |
 | 2026-10-26 | Launch product is QR menu + WhatsApp ordering (as built for 3amo Fouad); kitchen and stock screens come later | Founders' decision, existing build | offers, copywriting, plan | active (decision) |
 | 2026-10-26 | Lead every message with all three of looks + runs + stays; any one alone is generic | Positioning red-flag check (`positioning.md`) | copywriting, social, ads | active (decision) |
 | 2026-10-26 | No proof claim goes public until it is operationally true | Founders' decision in brand foundations | all drafting skills | active (decision) |
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v3 (2026-10-27) — Recorded 3amo Fouad facts (live, friend, paid in kind, portfolio OK, Cloudflare Pages), dropped the client credit line, added delivery decisions (one data source, fixed QR address).
 - v2 (2026-10-26) — Added the launch product (QR menu + WhatsApp ordering, built for 3amo Fouad), first-fit segment, delivery apps as an ordering alternative, two objections, and case #1 pending permission.
 - v1 (2026-10-26) — Initial context, auto-drafted from the Firststone brand foundations; customer language marked as hypotheses pending owner interviews.

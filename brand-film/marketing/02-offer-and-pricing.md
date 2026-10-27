@@ -45,7 +45,8 @@ Built once already, for 3amo Fouad (`cases/3amo-fouad.md`). Each new client gets
 - Go-live checklist completed and signed off (every item and price checked against the owner's list, tested on Android and iPhone, QR tested from print)
 - **Timeline:** live within **[5] working days** of receiving the current menu and prices
 - **Out of scope** (written in the quote): printing costs, logo or illustration design (quoted separately), payment collection, delivery-fee calculation, kitchen and stock screens, delivery-app integration
-- **[decide]** Where the page is hosted and on whose domain. Recommendation: Firststone hosts it on the plan; the client can take the files (a single static page) if they leave, in line with the no-lock-in promise.
+- **Hosting:** Cloudflare Pages (as for 3amo Fouad), in a Firststone account. The QR points to an address that never changes. If the client leaves, they take the files (a static page and PDF), in line with the no-lock-in promise. See `../product/qr-menu-how-it-works.md`.
+- **One place to update:** each client's items, sizes and prices live in one data source that builds both the ordering page and the print PDF. This sets the cost of the monthly plan.
 
 ### Extras that come with every setup (bonus stack)
 Kept small and real; each one makes the client more self-sufficient or makes the core easier to use.
@@ -134,8 +135,8 @@ English equivalent for decks and the website lives in `04-website-copy.md` §Pac
 
 ## 6. Open decisions
 1. ~~Default digital format~~ Settled: QR menu + WhatsApp ordering, as built for 3amo Fouad.
-2. Hosting and domain for client menu pages (Firststone-hosted on the plan is recommended).
+2. ~~Hosting~~ Settled: Cloudflare Pages in a Firststone account. Still open: a Firststone domain for permanent QR addresses (after name clearance).
 3. Whether item photos are in scope (3amo Fouad's page has none; photos raise cost and update work).
 4. Support hours and reply time the founders can keep every week.
 5. Founding-price lock: 6 or 12 months.
-6. The prices themselves, after the owner conversations. 3amo Fouad's actual price (if paid) is the first real data point.
+6. The prices themselves, after the owner conversations. 3amo Fouad was paid in kind, so the first real price comes from the first paying client.

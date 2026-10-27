@@ -26,7 +26,7 @@
 - Name cleared (or switched to the fallback) before any printed or paid asset ships.
 - 20–30 setups delivered, 10–15 on monthly plans **[confirm against founder capacity, §13]**.
 - 3–5 documented cases, used with permission, in Arabic and English.
-- Referrals (sticker, credit line, owner-to-owner) bringing in at least a third of new clients.
+- Referrals (owner-to-owner, partners, visible work in the neighbourhood) bringing in at least a third of new clients.
 - A tested second package (order screen or stock screen) with its own go-live checklist and fallback.
 - A decision, backed by numbers, on whether and when to test the Gulf.
 
@@ -86,7 +86,7 @@ No marketing hire, and none needed in the first 6 months. Execution help, if nee
 Bootstrapped, under $2K/month total tier. Assume close to $0 paid. Spend goes on: domain and simple hosting, WhatsApp Business (free app), printing (sample menus, stickers, business cards), a demo tablet, transport for field visits. **[NEED: actual monthly budget.]**
 
 ### Phase
-Pre-revenue, with one delivered example (3amo Fouad). The binding constraint is **proof and capacity**: no published prices, no permission-granted case yet, no SLA, and unknown founder hours.
+Pre-revenue, with one delivered example (3amo Fouad, unpaid). The binding constraint is **proof and capacity**: no published prices, no paid client, no SLA, and unknown founder hours.
 
 ### What's already done (build on it)
 | Asset | Status | Marketing leverage |
@@ -95,7 +95,7 @@ Pre-revenue, with one delivered example (3amo Fouad). The binding constraint is 
 | Identity: mark, palette, type, logo files | Done (Arabic logotype pending) | Social avatars, cards, menus, sticker, site |
 | Brand film, 43.75 s, plus 11 stills | Done | Website hero, Instagram/Facebook launch post, pinned post, pitch opener on a tablet |
 | Name "Firststone" | Working name | Blocked: trademark, domain, handle checks pending |
-| 3amo Fouad: printed menu + QR ordering page | Delivered **[confirm: paying client or pilot; live and in use?]** | The launch product, already built; the field-sales demo; case #1 once the owner gives written permission (`cases/3amo-fouad.md`) |
+| 3amo Fouad: printed menu + QR (live since ~24 Oct) and ordering page (built, not yet live) | Friend's restaurant, paid in kind; OK to show as portfolio | The launch product; the field-sales demo; case #1 (`cases/3amo-fouad.md`) |
 
 ### In flight / stuck
 | Item | Status | Blocker |
@@ -120,7 +120,7 @@ Pre-revenue, with one delivered example (3amo Fouad). The binding constraint is 
 | Local presence (Google, maps) | 0 | None |
 | Social presence | 0 | Handles not secured |
 | Messaging channel (WhatsApp) | 0 | Not set up |
-| Proof (cases, testimonials) | 1 | One delivered example; not publishable until the owner agrees |
+| Proof (cases, testimonials) | 2 | One live example, OK to show; no quote or numbers yet |
 | Referral mechanics | 2 | Designed (sticker, credit), not built |
 | Sales process | 1 | No pipeline, scripts or leave-behind |
 | Delivery and support model | 1 | Principles written, no checklist or SLA |
@@ -187,7 +187,7 @@ The plan's real business. Every move here protects monthly plan revenue.
 
 The cheapest channel Firststone has, and already designed into the identity.
 
-- **Window sticker** «متجهّز مع Firststone» on every client that agrees, plus a small "Made by Firststone" credit on delivered menus and screen footers.
+- **Window sticker** «متجهّز مع Firststone» only where a client wants one **[confirm the founders still want this, given the no-credit decision]**. No "Made by Firststone" credit on client work (founders' decision); the portfolio carries the work instead.
 - **Owner-to-owner referral reward** paid in service, not cash: one free month of plan for the referrer when the referred shop goes live.
 - **Google reviews** requested after go-live and again after the first month. Never offer anything in exchange for a review; Google's policies prohibit incentivized reviews.
 - **Partner referrals** from hardware sellers and print shops (§4 Move 5).
@@ -223,7 +223,9 @@ Weeks start Monday 2 Nov 2026. Owners: **F** = Fady, **H** = Hamdy. Rows marked 
 |---|---|---|
 | Trademark search + domain + handles for Firststone; decide by end of week 2 (fallbacks: Cornerline, Mainstay) | Foundation | F |
 | Employer outside-business and communication policy check | Foundation | F |
-| Decide founding price, plan price and support response time for QR menu + WhatsApp ordering; ask 3amo Fouad's owner for case permission | Revenue | F + H |
+| Decide founding price, plan price and support response time for QR menu + WhatsApp ordering | Revenue | F + H |
+| 3amo Fouad: one menu data source, then put the ordering page live at the QR address; fee per area agreed with Mostafa | Delivery | H |
+| Move the Cloudflare project to a shared Firststone account with two-factor login | Delivery | H |
 | Write go-live checklist v1 and the offline fallback for the menu package | Activation | F |
 | Recruit 8–10 owners for conversations (`03-customer-interviews.md`) | Research | H? |
 | Install WhatsApp Business on a dedicated number; profile, greeting, away message, labels | Activation | F |
@@ -253,7 +255,7 @@ Weeks start Monday 2 Nov 2026. Owners: **F** = Fady, **H** = Hamdy. Rows marked 
 |---|---|---|
 | Ramadan menu setup offer to every contact, client and neighbour (sell by mid-Jan, deliver before Ramadan) | Revenue | F + H |
 | First monthly "what changed" messages to clients on plans | Retention | F |
-| Document 1–3 cases with permission (photos, before/after, one owner quote); 3amo Fouad first, from week 1 if the owner agrees | Proof | H? |
+| Document 1–3 cases with permission (photos, before/after, one owner quote); 3amo Fouad first | Proof | H? |
 | Referral reward announced to live clients; stickers on every agreeing shop | Referral | F + H |
 | 90-day review: funnel by label, hours per client, price pushback, churn reasons; bump `product-marketing.md` | Measurement | F + H |
 
@@ -309,7 +311,8 @@ The skill cross-references a 139-idea library; that library (`marketing-ideas`) 
 | Free menu draft from a photo | Acquisition | Now |
 | Neighbourhood field visits | Acquisition | Now |
 | Founding-client pricing for case permission | Revenue | Now |
-| Window sticker + "Made by Firststone" credit | Referral | Now |
+| Window sticker (opt-in) | Referral | Q1, if founders want it |
+| "Made by Firststone" credit on client work | Referral | Skip: founders' decision |
 | Google Business Profile + review requests | Acquisition | Now |
 | Before/after social posts | Acquisition | Now |
 | Ramadan menu offer | Revenue | Now (Jan) |

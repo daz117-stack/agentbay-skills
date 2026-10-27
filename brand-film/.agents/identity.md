@@ -99,5 +99,5 @@ Chosen by the founders: **cobalt on stone** (replaces the earlier signal orange)
 - **Website:** paper background, hero "Start here. Start right.", a live demo (digital menu or order screen), clear package prices, a WhatsApp CTA.
 - **Business cards:** front: mark + Firststone on paper. Back: name, role, phone, WhatsApp in mono. Arabic on the reverse side, mirrored layout.
 - **Presentations / proposals:** paper slides, a grid visible on section dividers, prices in Archivo, scope in mono tables.
-- **Product UI (menus, order and stock screens):** uses the client's brand on screen, Firststone's system underneath (type scale, spacing, components), with a small "Made by Firststone" credit.
-- **Referral engine:** a small credit on every delivered menu or screen footer plus a window sticker «متجهّز مع Firststone» ("Set up with Firststone"). For an affordable, local business this is the cheapest marketing channel, so make it a design asset.
+- **Product UI (menus, order and stock screens):** uses the client's brand on screen, Firststone's system underneath (type scale, spacing, components). No Firststone credit on client work (founders' decision, 2026-10-27).
+- **Referral engine:** *(updated 2026-10-27: founders decided against a credit on client deliverables; see `product-marketing.md` Learnings)* ~~a small credit on every delivered menu or screen footer plus~~ a window sticker «متجهّز مع Firststone» ("Set up with Firststone"). For an affordable, local business this is the cheapest marketing channel, so make it a design asset.
