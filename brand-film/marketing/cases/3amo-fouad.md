@@ -39,6 +39,22 @@ This is the first-fit segment in `../01-marketing-plan.md` §2: takeaway- and de
 
 **Verified by Hamdy's build (fact, from its reports):** 70 automated tests passed; 30 live checks passed; a test pickup and a test delivery were looked up end to end, then marked cancelled. Tested in Chrome on desktop and at phone size. **Not tested on an iPhone or Safari, or by scanning the printed QR.**
 
+## 2a. What went live, in order
+
+| When | What | Where | Notes |
+|---|---|---|---|
+| ~24 Oct 2026 | **Printed menu + QR: what customers use.** PDF re-uploaded 26 Oct | QR → `3amo-fouad-menu.pages.dev` → `/menu.pdf` | The source for `../../clients/3amo-fouad/menu.json` |
+| Before 27 Oct (date [confirm]) | Ordering page, simple version (order written out in WhatsApp) | `3amo-fouad.pages.dev` | Not linked from the QR. All 109 prices matched the PDF. Kept as Cloudflare's rollback deployment |
+| 27 Oct 2026 | Ordering site, server version (saved orders, reference in WhatsApp) | Same address, replaced the above | Not linked from the QR. All 109 prices match the PDF |
+
+**Earlier draft, never live:** `3amo-fouad-reviewed.html`. Its menu differed from the PDF: no ta'meya-disc section, an older sharqi section, and 3 Syrian-bread prices higher than printed. These were fixed before the ordering page went live, so the drift noted on 27 Oct was in this draft, not on a live page.
+
+**Files received (chat uploads, 27 Oct; not committed):**
+- the live PDF;
+- Hamdy's server source, deploy bundle and README;
+- the pre-server local project (simple-version page, the draft above, `_headers`);
+- 19 restaurant photos. The same photos are in `3amo fouad.rar`: storefront, food, logo; usable for the portfolio with Mostafa's OK.
+
 ## 3. Product notes and decisions
 
 | # | Note | Decision / status |

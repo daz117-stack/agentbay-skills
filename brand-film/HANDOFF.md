@@ -56,6 +56,7 @@ PR [#3](https://github.com/daz117-stack/agentbay-skills/pull/3) is stacked on PR
   - QR address `https://3amo-fouad-menu.pages.dev` (redirects to `/menu.pdf`)
   - Ordering site `https://3amo-fouad.pages.dev/`
   - Staff lookup `https://staff.3amo-fouad.pages.dev/staff/`
+- **What went live, in order:** `brand-film/marketing/cases/3amo-fouad.md` §2a. Customers use the printed menu + QR, which open the PDF.
 - **Hamdy's ordering source (not in the repo):** shared as chat uploads (`secure-ordering-source.zip`, deploy ZIP, pre-server local ZIP). It holds deployment ids and a staff email, so it was not committed. Its README names the rollback deployment and a recovery folder on Hamdy's laptop. Re-request it for `check-menu.mjs` runs.
 
 ## Open Questions
