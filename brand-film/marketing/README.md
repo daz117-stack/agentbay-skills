@@ -12,7 +12,8 @@ Go-to-market work built on the brand foundations in `../.agents/`, using the ven
 | `05-whatsapp-playbook.md` | sms | WhatsApp Business setup, greeting, quick replies, labels as pipeline, flows, consent |
 | `06-referral-program.md` | referrals | Sticker and credit line, owner referral reward, Google reviews, partner referrals, tracking |
 | `cases/3amo-fouad.md` | — | Case #1: what was built, what's live, product notes and decisions, case draft, sample-copy plan |
-| `../product/qr-menu-how-it-works.md` | — | Plain explanation of Cloudflare Pages, the QR code and the WhatsApp link, plus what's live vs what was shared |
+| `../product/qr-menu-how-it-works.md` | — | Plain explanation of Cloudflare Pages, the QR code and the WhatsApp link; what's live; the server version 3amo Fouad now runs |
+| `../clients/3amo-fouad/` | — | 3amo Fouad menu data with the ordering site's product ids, and a check that catches price drift between the PDF and the site |
 
 ## The plan in one paragraph
 
@@ -28,5 +29,6 @@ Win 1–2 Cairo neighbourhoods through field visits and a free menu draft; sell 
 6. **Employer policy check**: blocks any mention of Fady's professional background.
 7. **E-invoicing / e-receipt rules**: blocks the order-screen package, not the menu package.
 8. **Neighbourhood choice**: blocks field-sales routing.
+9. **Simple or server ordering as the default offer**: 3amo Fouad now runs the server version (saved orders, staff lookup), so the website copy's "the order reaches your WhatsApp written out" (`04-website-copy.md`) doesn't describe it. Blocks the offer scope, price and website copy.
 
 All `[NEED]` and `[confirm]` markers in these files are open items, not claims.

@@ -1,95 +1,104 @@
-# Handoff — 2026-10-27 15:10 UTC
+# Handoff — 2026-10-27 (second session)
 
 ## Session Summary
 
-This session applied the vendored marketingskills to Firststone, the company founded by Fady and Hamdy. Inputs were the brand kit and the first client build, 3amo Fouad's printed menu with a QR code and a WhatsApp ordering page. The session produced a marketing context file, a go-to-market plan and supporting docs, a case file, and an explanation of the QR stack. Everything is pushed to PR #2 (draft). Prices, the support reply time and several founder decisions are still open.
+Continued Firststone go-to-market on 3amo Fouad. This session:
+- turned the live PDF menu into one data file;
+- received Hamdy's ordering source and found it already live on a separate address, with orders now saved on a server;
+- checked all three menu copies against each other;
+- recorded Mostafa's menu decisions;
+- updated the case file, the QR explainer and the marketing context (v4).
+
+PR [#3](https://github.com/daz117-stack/agentbay-skills/pull/3) is stacked on PR #2.
 
 ## Next-Session Focus
 
-Continue Firststone go-to-market:
-1. Get the 3amo Fouad ordering page live, fed from one menu data source.
-2. Set launch prices.
-3. Run the owner conversations.
-4. Build the one-page website.
+1. Make the printed QR lead to the ordering site. Change the redirect behind `3amo-fouad-menu.pages.dev`; never change the address.
+2. Settle the counter workflow and staff access with Mostafa before that switch.
+3. Founders decide: simple or server ordering as the default offer. Then set prices.
+4. Owner conversations, then the website.
 
 ## Current State
 
 - **Done:**
-  - Vendored 10 marketingskills skills.
-  - `product-marketing.md` is at v3.
-  - Plan, offer, interview guide, website copy, WhatsApp playbook and referral docs are written and updated for the launch product (QR menu + WhatsApp ordering).
-  - 3amo Fouad case file and the QR-stack explainer are written.
-- **In progress:** nothing mid-edit. PR #2 is clean against `claude/brand-film`, has no CI checks and no review comments.
+  - `brand-film/clients/3amo-fouad/menu.json`: 93 items, 109 item-sizes, in print order, keyed by the ordering site's product ids.
+  - `check-menu.mjs`: compares `menu.json` with the site's `app.js` menu and `server/catalog.json`.
+  - Last run: 0 id/size/price differences, 4 name differences.
+  - Case file, QR explainer (§5, §6) and `product-marketing.md` (v4) updated with the live state.
+- **In progress:** nothing mid-edit.
 - **Known broken / blocked:**
-  - **The QR doesn't open the ordering page.** It points to `https://3amo-fouad-menu.pages.dev`, which redirects to `/menu.pdf`. The ordering page with the cart isn't deployed there.
-  - **Menu and ordering page have already drifted.** The live PDF lists «بطاطس تومية كاتشب» at 35 EGP; the ordering page the founders shared doesn't have it.
-  - **Founder decisions are blocking the go-public steps.** The list is in `brand-film/marketing/README.md` ("Before anything goes public").
+  - **The QR doesn't lead to ordering.** `3amo-fouad-menu.pages.dev` (the printed QR) still redirects to the 6.3 MB PDF. The ordering site is live at `https://3amo-fouad.pages.dev/` but nothing on the print sends customers there.
+  - **Counter workload is untested.** The WhatsApp message carries only `AF-…`. Staff must sign in and paste the reference to see each order.
+  - **Staff access has one allow-listed email.** Confirm it's one the restaurant uses.
+  - **Cloudflare two-factor login is off** (deferred by Hamdy). The account now holds customer names and addresses.
+  - **Orders have no retention period.**
+  - **Not tested:** iPhone / Safari, and the real QR scan → order → counter lookup.
 
 ## Decisions Made
 
-One line each. The Learnings table in `brand-film/.agents/product-marketing.md` holds the reasoning.
-- **Launch product:** QR menu + WhatsApp ordering. Kitchen and stock screens come later.
-- **One place to update** each client's menu data, feeding both the ordering page and the print PDF.
-- **QR addresses never change.** Update the content behind the address, never the URL.
-- **No "Made by Firststone" credit on client work.** Work is shown in Firststone's portfolio instead.
-- **3amo Fouad stays a portfolio case.** It was paid in kind and the owner, Mostafa (a friend), agreed. It gives no price data point.
-- **North Coast branch is seasonal** (June to early October). Pickup stays New Cairo only for now.
-- **Hosting:** Cloudflare Pages, to be moved into a shared Firststone account with two-factor login.
-- **Name spelling:** **Firststone**, one word. Not "FirstStone" (`brand-film/.agents/voice.md` §04).
+- **Cheese spelling:** موتزريلا everywhere (Mostafa). Still to apply on the site (`discs.3.0`) and in the next PDF print.
+- **Cheese add-on (+15) stays a line item of its own** (Mostafa).
+- **«4 أقراص طعمية قماطي» is one item**, 4 small patties.
+- **PDF size:** Hamdy is checking it.
+- Earlier decisions stand (launch product, one place to update, fixed QR address, no client credit, portfolio case, seasonal North Coast, Cloudflare to a shared account with two-factor login, "Firststone" spelling). Reasoning is in the Learnings table of `brand-film/.agents/product-marketing.md`.
 
 ## Artifacts
 
 - **PRs:**
   - Brand film + brand kit: https://github.com/daz117-stack/agentbay-skills/pull/1 (draft, base `main`)
-  - This work: https://github.com/daz117-stack/agentbay-skills/pull/2 (draft, base `claude/brand-film`)
-- **Commits on this branch:** `0b81f3d` (vendored skills), `f597ccb` (context + plan), `04f9919` (QR ordering offer), `78f9618` (3amo Fouad facts, QR explainer)
-- **Docs index:** `brand-film/marketing/README.md` lists every marketing doc and the open blockers.
-- **Marketing context:** `brand-film/.agents/product-marketing.md`. Every marketing skill reads it first.
-- **Brand foundations:** `brand-film/.agents/` (positioning, messaging, voice, identity, story, naming).
-- **Brand kit:** `brand-film/output/Firststone-brand-kit/` (unchanged this session).
-- **Case:** `brand-film/marketing/cases/3amo-fouad.md`
-- **QR stack explainer:** `brand-film/product/qr-menu-how-it-works.md`
-- **Live site:** https://3amo-fouad-menu.pages.dev (redirects to `/menu.pdf`)
-- **Client files (not in the repo):** the ordering page `3amo-fouad-reviewed-new.html` and the menu PDF were chat uploads and won't carry to a new session. Ask the founders to re-share them, or get them from Hamdy's Cloudflare project.
-- **Skill sources:** `brand-film/.claude/skills/SOURCE.md`
+  - Marketing docs: https://github.com/daz117-stack/agentbay-skills/pull/2 (draft, base `claude/brand-film`)
+  - 3amo Fouad menu data + live-state update: https://github.com/daz117-stack/agentbay-skills/pull/3 (draft, base `claude/gracious-johnson-1hlm5j`)
+- **Menu data and check:** `brand-film/clients/3amo-fouad/` (`menu.json`, `check-menu.mjs`, `README.md`)
+- **Case:** `brand-film/marketing/cases/3amo-fouad.md` (notes #8–15 are new)
+- **QR stack explainer:** `brand-film/product/qr-menu-how-it-works.md` (§5 live state, §6 server version)
+- **Marketing context:** `brand-film/.agents/product-marketing.md` (v4)
+- **Live:**
+  - QR address `https://3amo-fouad-menu.pages.dev` (redirects to `/menu.pdf`)
+  - Ordering site `https://3amo-fouad.pages.dev/`
+  - Staff lookup `https://staff.3amo-fouad.pages.dev/staff/`
+- **Hamdy's ordering source (not in the repo):** shared as chat uploads (`secure-ordering-source.zip`, deploy ZIP, pre-server local ZIP). It holds deployment ids and a staff email, so it was not committed. Its README names the rollback deployment and a recovery folder on Hamdy's laptop. Re-request it for `check-menu.mjs` runs.
 
 ## Open Questions
 
-- **Where is the ordering page deployed,** if anywhere? Is it the next version that will replace the PDF at the QR address? (Ask Hamdy.)
-- **How does Hamdy update the Cloudflare project:** dashboard upload or a connected Git repo? Whose account is it in?
-- **Delivery fee:** a fee per area on the page, or a quick reply? Founders are discussing it with Mostafa.
+- **Simple or server ordering as the default offer?** It changes scope, price, upkeep and the website line "the order reaches your WhatsApp written out" (`marketing/04-website-copy.md`). Founders.
+- **Counter workflow:** should the server write the item list into the WhatsApp message beside the reference, so the lookup is only for checking? Hamdy, after a rush-hour test with Mostafa's counter.
+- **Single source in Hamdy's project:** should one file generate the `app.js` menu, `catalog.json` and the print page? Hamdy.
+- **The 3 [confirm] names** in `clients/3amo-fouad/README.md`.
+- **Delivery fee per area on the page** (built now as agreed by chat before the order goes out). Mostafa.
+- **Retention period** for orders. Check what Egypt's data protection law asks **[confirm]**.
 - **Window sticker:** still wanted, given the no-credit decision?
-- **Founder decisions** (the list in `brand-film/marketing/README.md`): hours per week, Hamdy's role, name clearance, prices, support reply time, employer policy check, e-invoicing rules, neighbourhood choice.
+- Founder decisions in `brand-film/marketing/README.md` (now 9, with simple vs server ordering).
 
 ## Next Steps
 
-1. Get the current ordering page file and the live PDF from the founders or Hamdy.
-2. Put the menu data in one data file. Generate the ordering page and a print layout from it (the PDF came from a Chromium print, so the same page can print it). Reconcile every item and price against the live PDF.
-3. Add a page title and a preview image (the cover). Make the ordering page the main page at the QR address and keep the PDF one tap away. Test scan → cart → WhatsApp on Android and iPhone.
-4. Make a demo copy of the ordering page that sends to Firststone's own WhatsApp, for sales visits and the portfolio (`cases/3amo-fouad.md` §6).
-5. Help the founders run the owner conversations (`marketing/03-customer-interviews.md`), then set prices (`marketing/02-offer-and-pricing.md` §4). Update `product-marketing.md` to v4 with what they hear.
-6. Build the one-page Arabic-first website from `marketing/04-website-copy.md` once prices and the name are settled.
+1. With Hamdy:
+   - apply موتزريلا on `discs.3.0`;
+   - settle the 3 [confirm] names;
+   - add the page title and preview image;
+   - run `node brand-film/clients/3amo-fouad/check-menu.mjs <source>` before deploying.
+2. With Mostafa's counter: a rush-hour trial of a saved order → WhatsApp reference → lookup. Confirm whose email signs in.
+3. Point the QR address's redirect at the ordering site, PDF one tap away. Test scan → order → lookup on Android and iPhone.
+4. Turn on Cloudflare two-factor login and move to a shared Firststone account.
+5. Demo copy that sends to Firststone's own WhatsApp **and its own database**, never the live site (`cases/3amo-fouad.md` §6).
+6. Owner conversations (`marketing/03-customer-interviews.md`), then prices (`marketing/02-offer-and-pricing.md` §4). Update `product-marketing.md` to v5.
+7. One-page website from `marketing/04-website-copy.md` once prices, the name and the simple/server decision are settled.
 
 ## Recommended Skills
 
-The repo-level skills in `brand-film/.claude/skills/` load when working under `brand-film/`. Keyword matches, checked by hand:
-- `product-marketing`: update the context to v4 after the owner conversations.
-- `customer-research`: run and synthesize the owner conversations.
-- `pricing` and `offers`: set launch prices and finalize the package.
-- `copywriting` and `site-architecture`: build the website copy into a page.
-- `sms`: WhatsApp flows, including the restaurant-side order inbox.
-- `referrals`: owner and partner referral setup.
-- `web-artifacts-builder` or `artifact-design`: if the site or the menu page is built as an HTML page here.
-- `run`: to preview and screenshot the ordering page during the data-source rebuild.
-- `pdf` (recommender match): checking the generated print PDF against the live one.
-- `design:user-research` (recommender match): an alternative to `customer-research` for the interview guide; prefer the vendored one, which already reads the context.
+- `product-marketing`: v5 after the owner conversations.
+- `customer-research`: the owner conversations.
+- `pricing` and `offers`: prices, and the simple/server packaging.
+- `copywriting` and `site-architecture`: the website.
+- `sms`: the restaurant-side WhatsApp flow with order references.
+- `run` / `pdf`: preview the ordering site; check a regenerated PDF.
 
 ## Environment Notes
 
-- **Repo and branch:** `daz117-stack/agentbay-skills`, branch `claude/gracious-johnson-1hlm5j`. Based on `claude/brand-film`, so the PR targets that branch, not `main`.
-- **Branch rule:** cloud sessions are assigned a branch; push only to the one the session names.
-- **Push and PR:** push with `git push -u origin <branch>`. Use the GitHub MCP tools for PR work; there is no `gh` CLI.
-- **Never commit** client personal data beyond what's already in the public menu.
-- **Writing rules:** no invented prices or claims; open items are marked `[NEED]` or `[confirm]`. Follow `brand-film/.agents/voice.md`: no exclamation marks in product, support or billing; numerals for prices.
+- **Repo:** `daz117-stack/agentbay-skills`.
+- **Branches:** this session pushed to `claude/firststone-gtm-planning-tsg6hf`, rebuilt on PR #2's head. The PR targets `claude/gracious-johnson-1hlm5j`.
+- **Branch rule:** push only to the branch the session names.
+- **Push and PR:** `git push -u origin <branch>`; GitHub MCP tools for PRs; no `gh` CLI.
+- **`check-menu.mjs`:** needs Node 18+. Hamdy's project itself requires Node 24.
+- **Never commit** client personal data or Hamdy's deployment config (staff emails, Access audience, database ids).
+- **Writing rules:** no invented prices or claims; open items marked `[NEED]` or `[confirm]`; follow `brand-film/.agents/voice.md`.
 - **The founder:** Fady prefers direct, analytical answers and wants weak assumptions challenged.
-- **PR watching:** the previous session stopped its scheduled check-ins on PR #2. Subscribe again if the new session should watch it.

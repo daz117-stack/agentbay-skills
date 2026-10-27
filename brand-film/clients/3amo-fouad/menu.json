@@ -1,10 +1,10 @@
 {
-  "schema": 1,
+  "schema": 2,
   "source": {
-    "file": "https://3amo-fouad-menu.pages.dev/menu.pdf",
-    "pdf_created": "2026-10-26T11:20:39Z",
-    "transcribed": "2026-10-27",
-    "note": "Names copied as printed, including the PDF's own spelling variants. Prices in EGP."
+    "printed": "https://3amo-fouad-menu.pages.dev/menu.pdf (created 2026-10-26)",
+    "ordering": "https://3amo-fouad.pages.dev/ server/catalog.json (deployment edd11ae5, 2026-10-27)",
+    "updated": "2026-10-27",
+    "note": "Names as printed, except owner-approved fixes listed in README.md. Prices in EGP. Item id + '.' + variant index (0 for single-price items) is the ordering site's product id."
   },
   "restaurant": {
     "name_ar": "عمو فؤاد",
@@ -31,320 +31,321 @@
       "name": "سندوتشات الفول",
       "items": [
         {
-          "id": "foul-01",
+          "id": "foul.0",
           "name": "فول محوج",
           "price": 10
         },
         {
-          "id": "foul-02",
+          "id": "foul.1",
           "name": "فول حار",
           "price": 13
         },
         {
-          "id": "foul-03",
+          "id": "foul.2",
           "name": "فول زيت زيتون",
           "price": 13
         },
         {
-          "id": "foul-04",
+          "id": "foul.3",
           "name": "فول صلصة",
           "price": 15
         },
         {
-          "id": "foul-05",
+          "id": "foul.4",
           "name": "فول بالزبدة",
           "price": 15
         },
         {
-          "id": "foul-06",
+          "id": "foul.5",
           "name": "فول إسكندراني",
           "price": 15
         },
         {
-          "id": "foul-07",
+          "id": "foul.6",
           "name": "فول ع طعمية",
           "price": 20
         },
         {
-          "id": "foul-08",
+          "id": "foul.7",
           "name": "فول بالبيض",
           "price": 25
         },
         {
-          "id": "foul-09",
+          "id": "foul.8",
           "name": "فول بالسجق",
           "price": 30
         },
         {
-          "id": "foul-10",
+          "id": "foul.9",
           "name": "فول بالبسطرمة",
           "price": 30
         }
       ]
     },
     {
-      "id": "taameya",
+      "id": "falafel",
       "name": "سندوتشات الطعمية",
       "items": [
         {
-          "id": "taameya-01",
+          "id": "falafel.0",
           "name": "طعمية",
           "price": 10
         },
         {
-          "id": "taameya-02",
+          "id": "falafel.1",
           "name": "طعمية محشية",
           "price": 15
         },
         {
-          "id": "taameya-03",
+          "id": "falafel.2",
           "name": "طعمية ع بطاطس",
           "price": 20
         },
         {
-          "id": "taameya-04",
+          "id": "falafel.3",
           "name": "طعمية بالجبنة موتزريلا",
           "price": 20
         },
         {
-          "id": "taameya-05",
+          "id": "falafel.4",
           "name": "طعمية بالباذنجان",
           "price": 20
         },
         {
-          "id": "taameya-06",
+          "id": "falafel.5",
           "name": "طعمية بالجبنة كيري",
           "price": 20
         },
         {
-          "id": "taameya-07",
+          "id": "falafel.6",
           "name": "طعمية ميكس جبن",
           "price": 25
         },
         {
-          "id": "taameya-08",
+          "id": "falafel.7",
           "name": "طعمية بسطرمة",
           "price": 25
         },
         {
-          "id": "taameya-09",
+          "id": "falafel.8",
           "name": "طعمية كيري بسطرمة",
           "price": 30
         }
       ]
     },
     {
-      "id": "batates",
+      "id": "potato",
       "name": "سندوتشات البطاطس",
       "items": [
         {
-          "id": "batates-01",
+          "id": "potato.0",
           "name": "بطاطس سادة",
           "price": 15
         },
         {
-          "id": "batates-02",
+          "id": "potato.1",
           "name": "بطاطس سلاطة وطحينة",
           "price": 15
         },
         {
-          "id": "batates-03",
+          "id": "potato.2",
           "name": "بطاطس بوريه بالزبدة",
           "price": 20
         },
         {
-          "id": "batates-04",
+          "id": "potato.3",
           "name": "بطاطس كاتشب",
           "price": 20
         },
         {
-          "id": "batates-05",
+          "id": "potato.4",
           "name": "بطاطس مايونيز",
           "price": 20
         },
         {
-          "id": "batates-06",
+          "id": "potato.5",
           "name": "بطاطس كاتشب مايونيز",
           "price": 22
         },
         {
-          "id": "batates-07",
+          "id": "potato.6",
           "name": "بطاطس بالجبنة (رومي+شيدر)",
           "price": 25
         },
         {
-          "id": "batates-08",
+          "id": "potato.7",
           "name": "بطاطس بازوكا (بالسوسيس)",
           "price": 30
         },
         {
-          "id": "batates-09",
+          "id": "potato.8",
           "name": "بطاطس معلش (سوسيس+بسطرمة+سجق)",
           "price": 45
         }
       ]
     },
     {
-      "id": "beid",
+      "id": "eggs",
       "name": "سندوتشات البيض",
       "items": [
         {
-          "id": "beid-01",
+          "id": "eggs.0",
           "name": "بيض مسلوق",
           "price": 20
         },
         {
-          "id": "beid-02",
+          "id": "eggs.1",
           "name": "أومليت سادة",
           "price": 20
         },
         {
-          "id": "beid-03",
+          "id": "eggs.2",
           "name": "أومليت خضار",
           "price": 20
         },
         {
-          "id": "beid-04",
+          "id": "eggs.3",
           "name": "أومليت رومي أو موتزريلا أو شيدر",
           "price": 25
         },
         {
-          "id": "beid-05",
+          "id": "eggs.4",
           "name": "أومليت سوسيس",
           "price": 25
         },
         {
-          "id": "beid-06",
+          "id": "eggs.5",
           "name": "أومليت ميكس جبن",
           "price": 30
         },
         {
-          "id": "beid-07",
+          "id": "eggs.6",
           "name": "أومليت بسطرمة أو سجق",
           "price": 30
         },
         {
-          "id": "beid-08",
+          "id": "eggs.7",
           "name": "أومليت كيري بسطرمة",
           "price": 35
         },
         {
-          "id": "beid-09",
+          "id": "eggs.8",
           "name": "أومليت أباتشي",
           "price": 35
         }
       ]
     },
     {
-      "id": "motanawea",
+      "id": "misc",
       "name": "سندوتشات متنوعة",
       "items": [
         {
-          "id": "motanawea-01",
+          "id": "misc.1",
           "name": "جبنة طماطم / بابا غنوج",
           "price": 20
         },
         {
-          "id": "motanawea-02",
+          "id": "misc.2",
           "name": "باذنجان مقلي / مسقعة",
           "price": 20
         },
         {
-          "id": "motanawea-03",
+          "id": "misc.0",
           "name": "جبنة مقلية / شكشوكة",
           "price": 25
         }
       ]
     },
     {
-      "id": "olab",
+      "id": "sharqi",
       "name": "علب شرقي",
       "items": [
         {
-          "id": "olab-01",
+          "id": "sharqi.0",
           "name": "فول سادة",
           "price": 25
         },
         {
-          "id": "olab-02",
+          "id": "sharqi.1",
           "name": "فول محوج",
           "price": 30
         },
         {
-          "id": "olab-03",
+          "id": "sharqi.2",
           "name": "فول زيت زيتون - حار - إسكندراني",
           "price": 35
         },
         {
-          "id": "olab-04",
+          "id": "sharqi.3",
           "name": "مسقعة",
           "price": 30
         },
         {
-          "id": "olab-05",
+          "id": "sharqi.4",
           "name": "بطاطس بوريه",
           "price": 30
         },
         {
-          "id": "olab-06",
+          "id": "sharqi.5",
           "name": "جبنة بالطماطم / بابا غنوج",
           "price": 30
         },
         {
-          "id": "olab-07",
+          "id": "sharqi.6",
           "name": "باذنجان مقلي / باذنجان مخلل",
           "price": 30
         },
         {
-          "id": "olab-08",
+          "id": "sharqi.7",
           "name": "بطاطس صوابع",
           "price": 30
         }
       ]
     },
     {
-      "id": "aqras",
+      "id": "discs",
       "name": "أقراص طعمية",
       "items": [
         {
-          "id": "aqras-01",
+          "id": "discs.0",
           "name": "قرص طعمية وسط",
           "price": 5
         },
         {
-          "id": "aqras-02",
+          "id": "discs.1",
           "name": "4 أقراص طعمية قماطي",
-          "price": 10
+          "price": 10,
+          "internal_note": "صنف واحد: 4 أقراص طعمية صغيرة"
         },
         {
-          "id": "aqras-03",
+          "id": "discs.2",
           "name": "قرص طعمية محشية",
           "price": 10
         },
         {
-          "id": "aqras-04",
-          "name": "قرص كيري أو موزاريلا",
+          "id": "discs.3",
+          "name": "قرص كيري أو موتزريلا",
           "price": 15
         },
         {
-          "id": "aqras-05",
+          "id": "discs.4",
           "name": "قرص طعمية بسطرمة",
           "price": 15
         },
         {
-          "id": "aqras-06",
+          "id": "discs.5",
           "name": "قرص طعمية كيري بسطرمة",
           "price": 20
         },
         {
-          "id": "aqras-07",
+          "id": "discs.6",
           "name": "قرص طعمية ميكس جبن",
           "price": 20
         }
       ]
     },
     {
-      "id": "grill-sandwiches",
+      "id": "grillsand",
       "name": "السندوتشات",
       "variants": [
         "بلدي",
@@ -352,7 +353,7 @@
       ],
       "items": [
         {
-          "id": "grill-sandwiches-01",
+          "id": "grillsand.0",
           "name": "كفتة مشوية",
           "prices": [
             85,
@@ -360,7 +361,7 @@
           ]
         },
         {
-          "id": "grill-sandwiches-02",
+          "id": "grillsand.1",
           "name": "طرب مشوي",
           "prices": [
             90,
@@ -368,7 +369,7 @@
           ]
         },
         {
-          "id": "grill-sandwiches-03",
+          "id": "grillsand.2",
           "name": "سجق مشوي",
           "prices": [
             90,
@@ -376,7 +377,7 @@
           ]
         },
         {
-          "id": "grill-sandwiches-04",
+          "id": "grillsand.3",
           "name": "شيش طاووق",
           "prices": [
             90,
@@ -384,17 +385,17 @@
           ]
         },
         {
-          "id": "grill-sandwiches-05",
+          "id": "grillsand.4",
           "name": "حواوشي",
           "price": 80
         },
         {
-          "id": "grill-sandwiches-06",
+          "id": "grillsand.5",
           "name": "حواوشي (سجق - بسطرمة)",
           "price": 100
         },
         {
-          "id": "grill-sandwiches-07",
+          "id": "grillsand.6",
           "name": "إضافة (موتزريلا / رومي / كيري)",
           "price": 15,
           "addon": true
@@ -402,58 +403,58 @@
       ]
     },
     {
-      "id": "syrian-bread",
+      "id": "syrian",
       "name": "ركن العيش السوري",
       "items": [
         {
-          "id": "syrian-bread-01",
+          "id": "syrian.0",
           "name": "طعمية",
           "price": 20
         },
         {
-          "id": "syrian-bread-02",
+          "id": "syrian.1",
           "name": "بطاطس كاتشب مايونيز",
           "price": 30
         },
         {
-          "id": "syrian-bread-03",
+          "id": "syrian.2",
           "name": "بطاطس تومية كاتشب",
           "price": 35
         },
         {
-          "id": "syrian-bread-04",
+          "id": "syrian.3",
           "name": "بطاطس موتزريلا",
           "price": 35
         },
         {
-          "id": "syrian-bread-05",
+          "id": "syrian.4",
           "name": "بطاطس شيدر",
           "price": 35
         },
         {
-          "id": "syrian-bread-06",
+          "id": "syrian.5",
           "name": "بطاطس رومي",
           "price": 35
         },
         {
-          "id": "syrian-bread-07",
+          "id": "syrian.6",
           "name": "بطاطس ميكس جبن",
           "price": 40
         },
         {
-          "id": "syrian-bread-08",
+          "id": "syrian.7",
           "name": "بطاطس بازوكا (بالسوسيس)",
           "price": 50
         },
         {
-          "id": "syrian-bread-09",
+          "id": "syrian.8",
           "name": "بطاطس معلش (سوسيس+بسطرمة+سجق)",
           "price": 70
         }
       ]
     },
     {
-      "id": "meat-grills",
+      "id": "meat",
       "name": "مشويات اللحوم",
       "variants": [
         "ربع كيلو",
@@ -462,7 +463,7 @@
       ],
       "items": [
         {
-          "id": "meat-grills-01",
+          "id": "meat.3",
           "name": "سجق مشوي",
           "prices": [
             140,
@@ -471,7 +472,7 @@
           ]
         },
         {
-          "id": "meat-grills-02",
+          "id": "meat.0",
           "name": "كفتة مشوية",
           "prices": [
             200,
@@ -480,7 +481,7 @@
           ]
         },
         {
-          "id": "meat-grills-03",
+          "id": "meat.2",
           "name": "ستيك مشوي",
           "prices": [
             240,
@@ -489,7 +490,7 @@
           ]
         },
         {
-          "id": "meat-grills-04",
+          "id": "meat.1",
           "name": "طرب مشوي",
           "prices": [
             250,
@@ -500,7 +501,7 @@
       ]
     },
     {
-      "id": "chicken-grills",
+      "id": "chickgrill",
       "name": "مشويات الفراخ",
       "variants": [
         "ربع كيلو",
@@ -509,7 +510,7 @@
       ],
       "items": [
         {
-          "id": "chicken-grills-01",
+          "id": "chickgrill.0",
           "name": "شيش طاووق",
           "prices": [
             140,
@@ -518,7 +519,7 @@
           ]
         },
         {
-          "id": "chicken-grills-02",
+          "id": "chickgrill.1",
           "name": "صدور مشوية",
           "prices": [
             140,
@@ -529,26 +530,26 @@
       ]
     },
     {
-      "id": "grilled-chicken",
+      "id": "wholechick",
       "name": "الفراخ المشوية",
       "items": [
         {
-          "id": "grilled-chicken-01",
+          "id": "wholechick.3",
           "name": "ربع فرخة مشوية ورك",
           "price": 100
         },
         {
-          "id": "grilled-chicken-02",
+          "id": "wholechick.2",
           "name": "ربع فرخة مشوية صدر",
           "price": 110
         },
         {
-          "id": "grilled-chicken-03",
+          "id": "wholechick.1",
           "name": "نصف فرخة مشوية",
           "price": 210
         },
         {
-          "id": "grilled-chicken-04",
+          "id": "wholechick.0",
           "name": "فرخة مشوية",
           "price": 400
         }
@@ -560,62 +561,62 @@
       "note": "يُقدَّم مع جميع الوجبات: أرز + عيش + سلطة + طحينة",
       "items": [
         {
-          "id": "meals-01",
+          "id": "meals.0",
           "name": "ربع فرخة مشوية ورك",
           "price": 120
         },
         {
-          "id": "meals-02",
+          "id": "meals.1",
           "name": "ربع فرخة مشوية صدر",
           "price": 135
         },
         {
-          "id": "meals-03",
+          "id": "meals.3",
           "name": "كفتة",
           "price": 170
         },
         {
-          "id": "meals-04",
+          "id": "meals.5",
           "name": "شيش طاووق",
           "price": 180
         },
         {
-          "id": "meals-05",
+          "id": "meals.6",
           "name": "صدور مشوية",
           "price": 180
         },
         {
-          "id": "meals-06",
+          "id": "meals.8",
           "name": "شيش + كفتة",
           "price": 185
         },
         {
-          "id": "meals-07",
+          "id": "meals.4",
           "name": "طرب",
           "price": 190
         },
         {
-          "id": "meals-08",
+          "id": "meals.7",
           "name": "فراخ + كفتة",
           "price": 190
         },
         {
-          "id": "meals-09",
+          "id": "meals.9",
           "name": "كفتة + طرب",
           "price": 190
         },
         {
-          "id": "meals-10",
+          "id": "meals.10",
           "name": "فراخ + طرب",
           "price": 195
         },
         {
-          "id": "meals-11",
+          "id": "meals.2",
           "name": "نصف فرخة",
           "price": 230
         },
         {
-          "id": "meals-12",
+          "id": "meals.11",
           "name": "ميكس جريل",
           "price": 295
         }
