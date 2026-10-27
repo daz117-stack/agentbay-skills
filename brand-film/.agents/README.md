@@ -13,6 +13,7 @@ Built with the vendored brand-building skills (`../.claude/skills/`, MIT, from a
 | `voice.md` | brand-voice | How we sound in Egyptian Arabic, MSA and English; vocabulary; style rules; before/after |
 | `identity.md` | brand-identity | Mark, wordmark, palette, type (incl. Arabic), imagery, principles, touchpoints. Same system as the film. |
 | `story.md` | brand-story | Long / short / one-liner story. **Draft with [slots] for real founder facts.** |
+| `product-marketing.md` | product-marketing (marketingskills) | Marketing context read by every marketing skill. Go-to-market work lives in `../marketing/`. |
 
 ## Decisions and actions before launch
 
