@@ -1,4 +1,4 @@
-# Handoff — 2026-10-27 (second session)
+# Handoff — 2026-10-28 (second session)
 
 ## Session Summary
 
@@ -7,16 +7,18 @@ Continued Firststone go-to-market on 3amo Fouad. This session:
 - received Hamdy's ordering source and found it already live on a separate address, with orders now saved on a server;
 - checked all three menu copies against each other;
 - recorded Mostafa's menu decisions;
-- updated the case file, the QR explainer and the marketing context (v4).
+- updated the case file, the QR explainer and the marketing context (v4);
+- wrote the fixes for Hamdy as a message (Arabic + English) and as a change spec.
 
 PR [#3](https://github.com/daz117-stack/agentbay-skills/pull/3) is stacked on PR #2.
 
 ## Next-Session Focus
 
-1. Make the printed QR lead to the ordering site. Change the redirect behind `3amo-fouad-menu.pages.dev`; never change the address.
-2. Settle the counter workflow and staff access with Mostafa before that switch.
-3. Founders decide: simple or server ordering as the default offer. Then set prices.
-4. Owner conversations, then the website.
+1. Send Hamdy the message or the spec (not sent yet), then track it: release 1 → gate checks → release 2 (QR switch).
+2. Make the printed QR lead to the ordering site (spec R2). Change the redirect behind `3amo-fouad-menu.pages.dev`; never change the address.
+3. Settle the counter workflow and staff access with Mostafa before that switch (spec G1, G2).
+4. Founders decide: simple or server ordering as the default offer. Then set prices.
+5. Owner conversations, then the website.
 
 ## Current State
 
@@ -25,6 +27,13 @@ PR [#3](https://github.com/daz117-stack/agentbay-skills/pull/3) is stacked on PR
   - `check-menu.mjs`: compares `menu.json` with the site's `app.js` menu and `server/catalog.json`.
   - Last run: 0 id/size/price differences, 4 name differences.
   - Case file, QR explainer (§5, §6) and `product-marketing.md` (v4) updated with the live state.
+  - `message-to-hamdy.md`: the fixes as a message, Egyptian Arabic and English, 11 points. **Draft, not sent.** Read its two "before sending" notes first.
+  - `ordering-site-spec.md`: the same content as a change spec with done-when criteria:
+    - release 1: names, title and preview;
+    - gate G1–G4: counter trial, staff access, two-factor login, PDF size;
+    - release 2: QR switch and device test;
+    - C1: item list in WhatsApp, only if G1 fails;
+    - backlog B1–B2: single source, retention.
 - **In progress:** nothing mid-edit.
 - **Known broken / blocked:**
   - **The QR doesn't lead to ordering.** `3amo-fouad-menu.pages.dev` (the printed QR) still redirects to the 6.3 MB PDF. The ordering site is live at `https://3amo-fouad.pages.dev/` but nothing on the print sends customers there.
@@ -49,6 +58,8 @@ PR [#3](https://github.com/daz117-stack/agentbay-skills/pull/3) is stacked on PR
   - Marketing docs: https://github.com/daz117-stack/agentbay-skills/pull/2 (draft, base `claude/brand-film`)
   - 3amo Fouad menu data + live-state update: https://github.com/daz117-stack/agentbay-skills/pull/3 (draft, base `claude/gracious-johnson-1hlm5j`)
 - **Menu data and check:** `brand-film/clients/3amo-fouad/` (`menu.json`, `check-menu.mjs`, `README.md`)
+- **Message to Hamdy:** `brand-film/clients/3amo-fouad/message-to-hamdy.md` (Arabic + English draft)
+- **Change spec:** `brand-film/clients/3amo-fouad/ordering-site-spec.md` (the work plan for Hamdy; track items by their IDs: R1.x, G1–G4, R2.x, C1, B1–B2)
 - **Case:** `brand-film/marketing/cases/3amo-fouad.md` (notes #8–15 are new)
 - **QR stack explainer:** `brand-film/product/qr-menu-how-it-works.md` (§5 live state, §6 server version)
 - **Marketing context:** `brand-film/.agents/product-marketing.md` (v4)
@@ -72,14 +83,17 @@ PR [#3](https://github.com/daz117-stack/agentbay-skills/pull/3) is stacked on PR
 
 ## Next Steps
 
-1. With Hamdy:
-   - apply موتزريلا on `discs.3.0`;
-   - settle the 3 [confirm] names;
-   - add the page title and preview image;
-   - run `node brand-film/clients/3amo-fouad/check-menu.mjs <source>` before deploying.
-2. With Mostafa's counter: a rush-hour trial of a saved order → WhatsApp reference → lookup. Confirm whose email signs in.
-3. Point the QR address's redirect at the ordering site, PDF one tap away. Test scan → order → lookup on Android and iPhone.
-4. Turn on Cloudflare two-factor login and move to a shared Firststone account.
+1. Fady sends Hamdy `message-to-hamdy.md` or `ordering-site-spec.md`. Confirm first:
+   - the 3 names with Mostafa (spec R1.2);
+   - the page title wording (R1.3);
+   - the PDF size target (G4).
+2. Release 1 (spec R1.1–R1.4): cheese spelling, names, title and preview. Re-run `check-menu.mjs` on the new source and expect 0 differences.
+3. Gate (spec G1–G4):
+   - counter trial at rush hour;
+   - restaurant email on the staff list;
+   - Cloudflare two-factor login, and the move to a shared Firststone account;
+   - smaller PDF.
+4. Release 2 (spec R2.1–R2.3): QR redirect to the ordering site, PDF one tap away. Test on Android and iPhone. Then update the case file §2a and the QR explainer §5.
 5. Demo copy that sends to Firststone's own WhatsApp **and its own database**, never the live site (`cases/3amo-fouad.md` §6).
 6. Owner conversations (`marketing/03-customer-interviews.md`), then prices (`marketing/02-offer-and-pricing.md` §4). Update `product-marketing.md` to v5.
 7. One-page website from `marketing/04-website-copy.md` once prices, the name and the simple/server decision are settled.
