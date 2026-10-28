@@ -1,6 +1,6 @@
 # How the QR menu works (Cloudflare, QR code, WhatsApp)
 
-Plain explanation for the founders, based on the 3amo Fouad build and a check of the live site on 2026-10-27. **Fact** = checked; **inference** = deduced from what the site returns, to confirm with Hamdy.
+Plain explanation for the founders, based on the 3amo Fouad build, a check of both live sites and Hamdy's ordering source, all on 2026-10-27. **Fact** = checked; **inference** = deduced from what the site returns, to confirm with Hamdy.
 
 ---
 
@@ -17,7 +17,9 @@ Plain explanation for the founders, based on the 3amo Fouad build and a check of
                                                      restaurant's WhatsApp receives a normal chat
 ```
 
-There is no server program, no database and no WhatsApp integration in this. That is why it is cheap and hard to break.
+This is the **simple version**: no server program, no database, no WhatsApp integration. That is why it is cheap and hard to break.
+
+3amo Fouad's live ordering site now runs the **server version** (§6): the server saves each order and WhatsApp carries only a reference. Which one Firststone sells by default is a founders' decision.
 
 ---
 
@@ -57,6 +59,8 @@ A QR code is the web address drawn as squares. It doesn't contain the menu, and 
 
 ## 4. The WhatsApp connection: a pre-filled link
 
+*This section describes the simple version, which 3amo Fouad ran until 27 Oct. The live site now works as in §6.*
+
 **Fact, from the ordering page's code:** the page uses WhatsApp's public "click to chat" link format, `https://wa.me/<number>?text=<message>`.
 
 1. The customer adds items; the cart (items, sizes, quantities, total) is kept in the customer's own browser.
@@ -73,17 +77,49 @@ A QR code is the web address drawn as squares. It doesn't contain the menu, and 
 
 ---
 
-## 5. What's live vs what was shared (check with Hamdy)
+## 5. What's live (updated 2026-10-27)
 
-**Fact:** the QR currently opens the **PDF menu**, not the ordering page with the cart. The ordering page file you shared (`3amo-fouad-reviewed-new.html`) isn't at that address.
+| Address | What it does | Fact |
+|---|---|---|
+| `https://3amo-fouad-menu.pages.dev` | **The printed QR's address.** Redirects to `/menu.pdf` (6.3 MB) | Checked live |
+| `https://3amo-fouad.pages.dev/` | Ordering site, server version (§6). Deployed 27 Oct | Checked live; source shared by Hamdy |
+| `https://staff.3amo-fouad.pages.dev/staff/` | Staff order lookup. Redirects to a Cloudflare sign-in | Checked live |
 
-**Inference:** the ordering page is the next version, not yet deployed, or it's deployed somewhere else.
+**The gap:** the QR leads to the PDF, not the ordering site. Hamdy's notes say the menu-download project and its QR were deliberately left untouched. Nothing on the printed menu sends a customer to the ordering site.
 
-**Fact: the two have already drifted.** The live PDF (re-uploaded 26 Oct) lists «بطاطس تومية كاتشب» at 35 EGP, which the ordering page doesn't have. This is the "two places to update" problem from `../marketing/cases/3amo-fouad.md` §3.
+**Menu drift is closed for prices.** The PDF, the site's page and the server price list agree on all 109 item-size prices. Four names differ (`../clients/3amo-fouad/README.md`).
 
-**Before switching the QR to the ordering page:**
-1. Make one menu data source (items, sizes, prices) and build both the ordering page and the print PDF from it. The PDF was produced from a browser print (its file says Chromium), so the same page can likely print the PDF with a print layout.
-2. Check every item and price against the current live PDF.
-3. Point the address's main page at the ordering page and keep the PDF one tap away (e.g. "Download menu"). The 6.3 MB PDF is slow on weak mobile data; the ordering page is much lighter.
-4. Add the page title and preview image so the link looks right when shared on WhatsApp.
-5. Test on Android and iPhone: scan the printed QR, add items, send, and confirm the message arrives correctly.
+**Before the QR leads to ordering:**
+1. In the `3amo-fouad-menu` project, change the redirect target from `/menu.pdf` to the ordering site, and keep the PDF one tap away. The QR address stays the same, so no reprint. Changing what's behind the address keeps the "never change the URL" rule.
+2. Settle the staff lookup (§6 *Things to settle*) with Mostafa's counter.
+3. Add the page title and preview image so the link looks right when shared.
+4. Test on Android **and iPhone**: scan the printed QR, add items, save, send the reference, look it up at the counter.
+
+---
+
+## 6. The server version (3amo Fouad's ordering site)
+
+```
+ phone ──items + quantities only──▶ Cloudflare Worker ──checks prices──▶ D1 database (saved order)
+   ▲                                          │
+   └──── reference AF-… + confirmed total ◀───┘
+   │
+   └─▶ wa.me link with «طلب جديد رقم AF-…» ──▶ customer taps Send ──▶ restaurant's WhatsApp
+                                                                         │
+            staff lookup page (Cloudflare Access sign-in) ◀── paste reference
+```
+
+**What changes from the simple version (fact, from Hamdy's source and reports):**
+- **Prices can't be changed by the customer.** The phone sends only item ids and quantities; the server prices the order. In the simple version, a customer could edit the typed WhatsApp message before sending.
+- **Orders are saved** in a Cloudflare D1 database: items, prices, total, name, address, notes, status (`new` for now; no screen changes it yet). There's an order record, but no order list: staff look orders up one reference at a time.
+- **Staff need a sign-in.** The lookup page is behind Cloudflare Access with an emailed code, and only allow-listed emails get in.
+- **Abuse limits:** at most 10 orders per customer and 200 in total per 10 minutes.
+- **Rollback** to the simple version is one click in Cloudflare (Hamdy's README names the deployment). Saved orders stay.
+- **Still free** on Cloudflare's plan as built; no paid service was added.
+
+**Things to settle:**
+- **Counter workload.** Every order needs a lookup to see its items. Try it at rush hour with whoever takes orders before the QR leads here.
+- **Who can sign in.** One allow-listed email today. The restaurant needs its own.
+- **Retention.** Orders are kept with no deletion date. Pick a period with Mostafa.
+- **Account security.** Two-factor login on the Cloudflare account is off (deferred). The account now holds customer names and addresses.
+- **Upkeep.** The server version has tests, a build step and secrets. It's more work to copy to client #2 than a page, so it should be priced as more.
